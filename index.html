@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenSDC · Open Scientific Data Compression</title>
+<meta name="description" content="OpenSDC is an open community for high-performance scientific data compression: error-bounded lossy and lossless compressors for HPC and AI4S, portable across diverse hardware.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b5cad'/%3E%3Crect x='7' y='8' width='18' height='4' rx='2' fill='white'/%3E%3Crect x='10' y='14' width='12' height='4' rx='2' fill='white' opacity='.8'/%3E%3Crect x='13' y='20' width='6' height='4' rx='2' fill='white' opacity='.6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#ffffff; --bg-alt:#f4f7fb; --text:#16202c; --muted:#5b6878; --line:#e2e8f0;
+  --brand:#0b5cad; --brand-dark:#083f78; --accent:#12a6a0; --card:#ffffff;
+  --radius:12px; --max:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1620; --bg-alt:#141d29; --text:#e6edf5; --muted:#9aa8b8; --line:#243142;
+    --brand:#4c9cf0; --brand-dark:#2f7fd6; --accent:#3cc9c2; --card:#16202d;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+  line-height:1.65;font-size:16px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;color:var(--text)}
+.logo:hover{text-decoration:none}
+.logo svg{width:30px;height:30px}
+.links{display:flex;gap:22px;align-items:center;font-size:15px}
+.links a{color:var(--muted)}
+.links a:hover{color:var(--text);text-decoration:none}
+.lang{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;
+  padding:5px 10px;cursor:pointer;font-size:14px}
+@media (max-width:760px){.links a.hide-sm{display:none}}
+
+/* hero */
+.hero{padding:88px 0 72px;background:
+  radial-gradient(1000px 400px at 85% -10%,color-mix(in srgb,var(--accent) 18%,transparent),transparent),
+  radial-gradient(900px 400px at 0% 0%,color-mix(in srgb,var(--brand) 16%,transparent),transparent)}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.15;margin:0 0 16px;letter-spacing:-.5px}
+.hero h1 span{color:var(--brand)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:760px;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;font-size:15px}
+.btn.primary{background:var(--brand);color:#fff}
+.btn.primary:hover{background:var(--brand-dark);text-decoration:none}
+.btn.ghost{border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btn.ghost:hover{border-color:var(--brand);text-decoration:none}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.pill{font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--card)}
+
+/* sections */
+section{padding:72px 0}
+section.alt{background:var(--bg-alt)}
+h2{font-size:30px;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 36px;max-width:760px}
+h3.group{font-size:18px;margin:34px 0 16px;color:var(--muted);font-weight:600;letter-spacing:.3px}
+
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+  display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--brand);transform:translateY(-2px)}
+.card h4{margin:0;font-size:19px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.meta{display:flex;flex-wrap:wrap;gap:8px;font-size:13px}
+.tag{padding:2px 9px;border-radius:6px;background:var(--bg-alt);color:var(--muted);border:1px solid var(--line)}
+.tag.pub{color:var(--brand);border-color:color-mix(in srgb,var(--brand) 35%,var(--line))}
+.tag.dom{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.card .gh{font-size:14px;font-weight:600}
+.card.add{border-style:dashed;justify-content:center;align-items:flex-start}
+
+.principles{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.principle{padding:22px;border-radius:var(--radius);background:var(--card);border:1px solid var(--line)}
+.principle .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand);font-weight:700;margin-bottom:12px}
+.principle h4{margin:0 0 6px;font-size:17px}
+.principle p{margin:0;color:var(--muted);font-size:15px}
+
+.roadmap{display:grid;gap:14px;counter-reset:r}
+.step{display:grid;grid-template-columns:44px 1fr auto;gap:16px;align-items:start;padding:18px 20px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.step::before{counter-increment:r;content:counter(r);width:36px;height:36px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700}
+.step h4{margin:0 0 4px;font-size:17px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+.status{font-size:12px;padding:3px 10px;border-radius:999px;white-space:nowrap;border:1px solid var(--line);color:var(--muted)}
+.status.go{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+@media (max-width:600px){.step{grid-template-columns:40px 1fr}.status{grid-column:2}}
+
+.involve{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* i18n */
+[data-zh]{display:none}
+html[lang="zh"] [data-en]{display:none}
+html[lang="zh"] [data-zh]{display:revert}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0b5cad"/><rect x="7" y="8" width="18" height="4" rx="2" fill="#fff"/><rect x="10" y="14" width="12" height="4" rx="2" fill="#fff" opacity=".8"/><rect x="13" y="20" width="6" height="4" rx="2" fill="#fff" opacity=".6"/></svg>
+      OpenSDC
+    </a>
+    <nav class="links">
+      <a class="hide-sm" href="#projects"><span data-en>Projects</span><span data-zh>项目</span></a>
+      <a class="hide-sm" href="#roadmap"><span data-en>Roadmap</span><span data-zh>路线图</span></a>
+      <a class="hide-sm" href="#join"><span data-en>Join</span><span data-zh>参与</span></a>
+      <a href="https://github.com/opensdc-org">GitHub</a>
+      <button class="lang" id="langBtn" type="button">中文</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1 data-en>Open <span>Scientific Data</span> Compression</h1>
+      <h1 data-zh>开放<span>科学数据压缩</span>社区</h1>
+      <p class="lead" data-en>An open, neutral community for high-performance scientific data compression. We develop, maintain, and benchmark error-bounded lossy and lossless compressors for HPC and AI-for-Science, portable across CPUs, GPUs, and accelerators.</p>
+      <p class="lead" data-zh>一个开放、中立的高性能科学数据压缩社区。我们研发、维护和评测面向高性能计算与科学智能（AI4S）的误差可控有损压缩与无损压缩软件，支持多种 CPU、GPU 与加速器平台。</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects"><span data-en>Explore projects</span><span data-zh>浏览项目</span></a>
+        <a class="btn ghost" href="https://github.com/opensdc-org"><span data-en>View on GitHub</span><span data-zh>访问 GitHub</span></a>
+        <a class="btn ghost" href="#join"><span data-en>Join the community</span><span data-zh>加入社区</span></a>
+      </div>
+      <div class="pills">
+        <span class="pill"><span data-en>Error-bounded lossy</span><span data-zh>误差可控有损压缩</span></span>
+        <span class="pill"><span data-en>Lossless</span><span data-zh>无损压缩</span></span>
+        <span class="pill">CPU · GPU · <span data-en>Accelerators</span><span data-zh>加速器</span></span>
+        <span class="pill">BSD-3-Clause / MIT</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2 data-en>Why OpenSDC</h2><h2 data-zh>为什么需要 OpenSDC</h2>
+      <p class="sub" data-en>Simulations, large instruments, and AI models now produce data far faster than storage, I/O, and networks can absorb. OpenSDC aims to make compression a dependable building block of scientific data management: high ratio, high throughput, strict error control, and portability across platforms.</p>
+      <p class="sub" data-zh>科学模拟、大科学装置和 AI 模型产生数据的速度，已远超存储、I/O 与网络的承载能力。OpenSDC 希望让压缩成为科学数据管理中可靠的基础组件：高压缩比、高吞吐、严格误差控制、跨平台可移植。</p>
+      <div class="principles">
+        <div class="principle"><div class="ic">O</div>
+          <h4><span data-en>Open</span><span data-zh>开放</span></h4>
+          <p data-en>Permissive licenses (BSD-3-Clause / MIT). Anyone can use, modify, and contribute.</p>
+          <p data-zh>采用 BSD-3-Clause / MIT 等宽松许可证，任何人均可使用、修改和贡献。</p></div>
+        <div class="principle"><div class="ic">N</div>
+          <h4><span data-en>Neutral</span><span data-zh>中立</span></h4>
+          <p data-en>Not tied to any single team or vendor. Every compressor joins on equal footing.</p>
+          <p data-zh>不绑定任何特定团队或厂商，各家压缩软件平等加入。</p></div>
+        <div class="principle"><div class="ic">P</div>
+          <h4><span data-en>Portable</span><span data-zh>可移植</span></h4>
+          <p data-en>Designed to run efficiently on diverse hardware, including domestic platforms.</p>
+          <p data-zh>面向多样化硬件（含国产平台）高效运行。</p></div>
+        <div class="principle"><div class="ic">R</div>
+          <h4><span data-en>Reproducible</span><span data-zh>可复现</span></h4>
+          <p data-en>Every claim backed by public datasets, benchmarks, and scripts.</p>
+          <p data-zh>所有性能结论均有公开数据集、基准与脚本支撑。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="alt">
+    <div class="wrap">
+      <h2 data-en>Projects</h2><h2 data-zh>项目</h2>
+      <p class="sub" data-en>General-purpose and domain-specific compressors hosted by OpenSDC. New projects are welcome.</p>
+      <p class="sub" data-zh>OpenSDC 托管的通用型与领域专用压缩软件，欢迎更多项目加入。</p>
+
+      <h3 class="group" data-en>General-purpose compressors</h3><h3 class="group" data-zh>通用压缩器</h3>
+      <div class="grid" id="general"></div>
+
+      <h3 class="group" data-en>Domain-specific compressors</h3><h3 class="group" data-zh>领域专用压缩器</h3>
+      <div class="grid" id="domain"></div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="wrap">
+      <h2 data-en>Roadmap</h2><h2 data-zh>路线图</h2>
+      <p class="sub" data-en>What the community is building together in its early stage.</p>
+      <p class="sub" data-zh>社区初期正在共同推进的工作。</p>
+      <div class="roadmap">
+        <div class="step"><div>
+          <h4><span data-en>Software onboarding</span><span data-zh>压缩软件入驻</span></h4>
+          <p data-en>Bring members' open-source compressors into OpenSDC with shared maintenance, review, and maintainers from multiple institutions.</p>
+          <p data-zh>各单位开源压缩软件入驻联盟，日常化管理与评审，欢迎多单位共同担任 maintainer。</p></div>
+          <span class="status go"><span data-en>In progress</span><span data-zh>进行中</span></span></div>
+        <div class="step"><div>
+          <h4><span data-en>Open benchmark datasets</span><span data-zh>开源基准数据集</span></h4>
+          <p data-en>Collect contributed scientific datasets (climate, cosmology, light sources, solar physics, materials, ...) into a common benchmark suite.</p>
+          <p data-zh>汇集各单位贡献的科学数据集（气象气候、宇宙学、光源、太阳物理、材料等），形成统一基准数据集。</p></div>
+          <span class="status go"><span data-en>In progress</span><span data-zh>进行中</span></span></div>
+        <div class="step"><div>
+          <h4><span data-en>Benchmark system &amp; leaderboard</span><span data-zh>评测系统与榜单</span></h4>
+          <p data-en>A reproducible evaluation platform with periodically published results on ratio, throughput, and error quality.</p>
+          <p data-zh>搭建可复现的评测平台，定期发布压缩比、吞吐与误差质量等榜单。</p></div>
+          <span class="status go"><span data-en>In progress · Coming soon</span><span data-zh>进行中，即将发布</span></span></div>
+        <div class="step"><div>
+          <h4><span data-en>Community meetings</span><span data-zh>定期研讨</span></h4>
+          <p data-en>Regular member meetings and workshops, in collaboration with CCF and related open-source organizations.</p>
+          <p data-zh>与 CCF 及相关开源组织合作，定期举办成员见面会和技术研讨。</p></div>
+          <span class="status"><span data-en>Planned</span><span data-zh>规划中</span></span></div>
+        <div class="step"><div>
+          <h4><span data-en>Standardization</span><span data-zh>标准化</span></h4>
+          <p data-en>Work with partner institutions toward group and national standards for scientific data compression.</p>
+          <p data-zh>联合相关单位推动科学数据压缩团体标准，进而推动国家标准。</p></div>
+          <span class="status"><span data-en>Planned</span><span data-zh>规划中</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="alt">
+    <div class="wrap">
+      <h2 data-en>Get involved</h2><h2 data-zh>参与方式</h2>
+      <p class="sub" data-en>Researchers, students, and industry partners are all welcome.</p>
+      <p class="sub" data-zh>欢迎高校、科研院所的老师同学以及企业伙伴共同参与。</p>
+      <div class="involve">
+        <div class="card"><h4><span data-en>Contribute software</span><span data-zh>贡献软件</span></h4>
+          <p data-en>Host your compressor under OpenSDC, or open issues and pull requests in any project.</p>
+          <p data-zh>将您的压缩软件加入 OpenSDC，或在任意项目中提交 Issue 与 PR。</p>
+          <a class="gh" href="https://github.com/opensdc-org/.github/blob/main/CONTRIBUTING.md"><span data-en>Contributing guide →</span><span data-zh>贡献指南 →</span></a></div>
+        <div class="card"><h4><span data-en>Contribute datasets</span><span data-zh>贡献数据集</span></h4>
+          <p data-en>Share open scientific datasets for the benchmark. Others optimize for your data, and your applications benefit.</p>
+          <p data-zh>为基准贡献开源科学数据集，其他团队据此优化压缩软件，最终反哺您的应用。</p>
+          <a class="gh" href="mailto:taodingwen@ict.ac.cn"><span data-en>Contact us →</span><span data-zh>联系我们 →</span></a></div>
+        <div class="card"><h4><span data-en>Industry partnership</span><span data-zh>企业合作</span></h4>
+          <p data-en>Support platform adaptation and real-world deployment of open compression software.</p>
+          <p data-zh>支持压缩软件的国产化平台适配与落地应用。</p>
+          <a class="gh" href="mailto:taodingwen@ict.ac.cn"><span data-en>Contact us →</span><span data-zh>联系我们 →</span></a></div>
+      </div>
+      <p style="margin-top:28px;color:var(--muted)">
+        <span data-en>Contact:</span><span data-zh>联系方式：</span>
+        <a href="mailto:taodingwen@ict.ac.cn">taodingwen@ict.ac.cn</a> ·
+        <a href="mailto:jinyang.liu@sjtu.edu.cn">jinyang.liu@sjtu.edu.cn</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> OpenSDC · <span data-en>Open Scientific Data Compression</span><span data-zh>开放科学数据压缩社区</span></span>
+    <a href="https://github.com/opensdc-org">github.com/opensdc-org</a>
+  </div>
+</footer>
+
+<script>
+// ---- Project list: edit here to add or update projects ----
+const PROJECTS = [
+  { name:"Falcons", group:"general", repo:"https://github.com/opensdc-org/Falcons",
+    en:"Error-bounded lossy compressor optimized for parallel scientific applications on x86, ARM, and accelerator platforms.",
+    zh:"面向并行科学应用的误差可控有损压缩器，针对 x86、ARM 及加速器平台深度优化。",
+    pub:"PPoPP '27" },
+  { name:"CAIEC", group:"general", repo:"https://github.com/opensdc-org/CAIEC",
+    en:"Learning-based compression with co-optimized model inference and entropy coding.",
+    zh:"模型推理与熵编码协同优化的学习型压缩。",
+    pub:"Coming soon", pubZh:"即将发表" },
+  { name:"PRISM", group:"general", repo:"https://github.com/opensdc-org/PRISM",
+    en:"GPU-based progressive lossy compression for on-demand, precision-aware data retrieval.",
+    zh:"基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据。",
+    pub:"PPoPP '26 · Best Paper Nominee", pubZh:"PPoPP '26 · 最佳论文提名", pubUrl:"https://doi.org/10.1145/3774934.3786438" },
+  { name:"MANS", group:"general", repo:"https://github.com/opensdc-org/MANS",
+    en:"Efficient and portable ANS entropy coding for multi-byte integer data on CPUs and GPUs.",
+    zh:"面向多字节整型数据的高效可移植 ANS 熵编码，支持 CPU 与 GPU。",
+    pub:"SC '25", pubUrl:"https://doi.org/10.1145/3712285.3759825" },
+  { name:"PhotonZip", group:"domain", domain:"Light sources", domainZh:"光源", repo:"https://github.com/opensdc-org/PhotonZip",
+    en:"Compression software package for light source (synchrotron) data.",
+    zh:"面向光源数据的压缩软件包。",
+    pub:"NPC '26" },
+  { name:"SolarZip", group:"domain", domain:"Solar physics", domainZh:"太阳物理", repo:"https://github.com/opensdc-org/SolarZip",
+    en:"Efficient and adaptive compression framework for solar EUV imaging data.",
+    zh:"面向太阳极紫外（EUV）成像数据的高效自适应压缩框架。",
+    pub:"A&A '25", pubUrl:"https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html" }
+];
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function card(p){
+  const pubEn = esc(p.pub), pubZh = esc(p.pubZh || p.pub);
+  const pubTag = p.pubUrl
+    ? `<a class="tag pub" href="${esc(p.pubUrl)}"><span data-en>${pubEn}</span><span data-zh>${pubZh}</span></a>`
+    : `<span class="tag pub"><span data-en>${pubEn}</span><span data-zh>${pubZh}</span></span>`;
+  const dom = p.domain ? `<span class="tag dom"><span data-en>${esc(p.domain)}</span><span data-zh>${esc(p.domainZh||p.domain)}</span></span>` : "";
+  return `<div class="card">
+    <h4>${esc(p.name)}</h4>
+    <p><span data-en>${esc(p.en)}</span><span data-zh>${esc(p.zh)}</span></p>
+    <div class="meta">${dom}${pubTag}</div>
+    <a class="gh" href="${esc(p.repo)}">GitHub →</a></div>`;
+}
+const addCard = (en,zh)=>`<div class="card add"><h4><span data-en>Your project here</span><span data-zh>欢迎您的项目</span></h4>
+  <p><span data-en>${en}</span><span data-zh>${zh}</span></p>
+  <a class="gh" href="#join"><span data-en>How to join →</span><span data-zh>如何加入 →</span></a></div>`;
+
+document.getElementById("general").innerHTML =
+  PROJECTS.filter(p=>p.group==="general").map(card).join("") +
+  addCard("Contribute a general-purpose lossy or lossless compressor.","欢迎贡献通用型有损或无损压缩软件。");
+document.getElementById("domain").innerHTML =
+  PROJECTS.filter(p=>p.group==="domain").map(card).join("") +
+  addCard("Climate, cosmology, microscopy, genomics, materials, and more.","气象气候、宇宙学、显微成像、基因组、材料等领域均欢迎。");
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+// ---- Language toggle (remembers choice) ----
+const btn = document.getElementById("langBtn");
+function setLang(l){
+  document.documentElement.lang = l;
+  btn.textContent = l === "zh" ? "EN" : "中文";
+  try{ localStorage.setItem("opensdc-lang", l) }catch(e){}
+}
+let saved = null;
+try{ saved = localStorage.getItem("opensdc-lang") }catch(e){}
+setLang(saved || ((navigator.language||"").toLowerCase().startsWith("zh") ? "zh" : "en"));
+btn.addEventListener("click", ()=> setLang(document.documentElement.lang === "zh" ? "en" : "zh"));
+</script>
+</body>
+</html>
