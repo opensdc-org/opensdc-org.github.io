@@ -17,10 +17,14 @@ Edit the `PROJECTS` array near the bottom of `index.html`:
   pub:"SC '26", pubUrl:"https://doi.org/..." }
 ```
 
-## Bilingual text
+## Bilingual pages
 
-Every visible string has an English and a Chinese version:
-`<span data-en>...</span><span data-zh>...</span>`. The toggle in the nav switches between them.
+- `index.html` — English (default): https://opensdc-org.github.io/
+- `zh.html` — 中文: https://opensdc-org.github.io/zh.html
+
+The two files are identical except for `<html lang="en|zh">`, the `<title>` / description, and the language link in the nav.
+Every visible string has both versions, `<span data-en>...</span><span data-zh>...</span>`, and the page's `lang` decides which one shows.
+When you change content, apply the same edit to both files.
 
 ## Local preview
 
