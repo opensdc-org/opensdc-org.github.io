@@ -45,6 +45,7 @@ header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 8
 .links a.lang{color:var(--text)}
 .lang:hover{border-color:var(--brand);text-decoration:none}
 @media (max-width:760px){.links a.hide-sm{display:none}}
+@media (max-width:480px){.nav{height:auto;min-height:60px;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.links{gap:14px;flex-wrap:wrap}}
 
 /* hero */
 .hero{padding:88px 0 72px;background:
@@ -120,6 +121,7 @@ html[lang="zh"] [data-zh]{display:revert}
     </a>
     <nav class="links">
       <a class="hide-sm" href="#projects"><span data-en>Projects</span><span data-zh>项目</span></a>
+      <a href="/benchmark/"><span data-en>Benchmark</span><span data-zh>评测榜单</span></a>
       <a class="hide-sm" href="#roadmap"><span data-en>Roadmap</span><span data-zh>路线图</span></a>
       <a class="hide-sm" href="#join"><span data-en>Join</span><span data-zh>参与</span></a>
       <a href="https://github.com/opensdc-org">GitHub</a>
@@ -133,10 +135,11 @@ html[lang="zh"] [data-zh]{display:revert}
     <div class="wrap">
       <h1 data-en>Open <span>Scientific Data</span> Compression</h1>
       <h1 data-zh>开放<span>科学数据压缩</span>社区</h1>
-      <p class="lead" data-en>An open, neutral community for high-performance scientific data compression. We develop, maintain, and benchmark error-bounded lossy and lossless compressors for HPC and AI-for-Science, portable across CPUs, GPUs, and accelerators.</p>
-      <p class="lead" data-zh>一个开放、中立的高性能科学数据压缩社区。我们研发、维护和评测面向高性能计算与科学智能（AI4S）的误差可控有损压缩与无损压缩软件，支持多种 CPU、GPU 与加速器平台。</p>
+      <p class="lead" data-en>An open, neutral community for high-performance scientific data compression. We develop, maintain, and benchmark error-bounded lossy and lossless compressors for HPC and AI-for-Science, portable across CPUs, GPUs, and accelerators. With OpenSDC-Bench, we also provide open code, data, metrics, and leaderboards for fair, reproducible comparisons.</p>
+      <p class="lead" data-zh>一个开放、中立的高性能科学数据压缩社区。我们研发、维护和评测面向高性能计算与科学智能（AI4S）的误差可控有损压缩与无损压缩软件，支持多种 CPU、GPU 与加速器平台。同时通过 OpenSDC-Bench 提供开放的评测代码、数据、指标与榜单，支持公平、可复现的比较。</p>
       <div class="btns">
         <a class="btn primary" href="#projects"><span data-en>Explore projects</span><span data-zh>浏览项目</span></a>
+        <a class="btn ghost" href="/benchmark/"><span data-en>Explore benchmark</span><span data-zh>查看评测榜单</span></a>
         <a class="btn ghost" href="https://github.com/opensdc-org"><span data-en>View on GitHub</span><span data-zh>访问 GitHub</span></a>
         <a class="btn ghost" href="#join"><span data-en>Join the community</span><span data-zh>加入社区</span></a>
       </div>
@@ -148,6 +151,22 @@ html[lang="zh"] [data-zh]{display:revert}
       </div>
     </div>
   </div>
+
+  <section id="benchmark" class="alt">
+    <div class="wrap">
+      <h2>OpenSDC-Bench</h2>
+      <p class="sub" data-en>Scientific data compression. Open. Fair. Reproducible.</p>
+      <p class="sub" data-zh>科学数据压缩评测：开放、公平、可复现。</p>
+      <p data-en>An open-source benchmarking system bringing together evaluation code, scientific datasets, comprehensive metrics, and regularly updated leaderboards. Compare compression ratio, speed, and scientific fidelity across datasets and error bounds under a shared, transparent protocol—to choose the right compressor for your data or develop a better one.</p>
+      <p data-zh>集成开源评测代码、科学数据集、多维评测指标和持续更新的榜单。在统一、透明的协议下，比较不同压缩方法在不同数据集与误差界上的压缩率、速度和科学数据保真度，帮助用户选型，帮助开发者理解性能差异并优化方法。</p>
+      <div class="btns">
+        <a class="btn primary" href="/benchmark/"><span data-en>Explore leaderboard →</span><span data-zh>查看评测与榜单 →</span></a>
+        <a class="btn ghost" href="https://github.com/opensdc-org/OpenSDC-Bench"><span data-en>Evaluation code</span><span data-zh>评测代码</span></a>
+        <a class="btn ghost" href="https://github.com/opensdc-org/OpenSDC-Bench/tree/main/datasets"><span data-en>Datasets &amp; access guide</span><span data-zh>数据集与获取指南</span></a>
+        <a class="btn ghost" href="https://github.com/opensdc-org/OpenSDC-Bench/blob/main/CONTRIBUTING.md"><span data-en>Contribute to the benchmark</span><span data-zh>参与评测建设</span></a>
+      </div>
+    </div>
+  </section>
 
   <section id="about">
     <div class="wrap">
@@ -207,9 +226,9 @@ html[lang="zh"] [data-zh]{display:revert}
           <span class="status go"><span data-en>In progress · Coming soon</span><span data-zh>进行中，即将发布</span></span></div>
         <div class="step"><div>
           <h4><span data-en>Benchmark system &amp; leaderboard</span><span data-zh>评测系统与榜单</span></h4>
-          <p data-en>A reproducible evaluation platform with periodically published results on ratio, throughput, and error quality.</p>
-          <p data-zh>搭建可复现的评测平台，定期发布压缩比、吞吐与误差质量等榜单。</p></div>
-          <span class="status go"><span data-en>In progress · Coming soon</span><span data-zh>进行中，即将发布</span></span></div>
+          <p data-en><a href="/benchmark/">OpenSDC-Bench is live</a>, with open evaluation code and published results on compression ratio, throughput, and scientific fidelity. Contributions of compressors, datasets, metrics, and audited results are welcome.</p>
+          <p data-zh><a href="/benchmark/">OpenSDC-Bench 已上线</a>，提供开源评测代码，以及压缩率、吞吐量与科学数据保真度等公开结果。欢迎贡献压缩器、数据集、指标和可审计的评测结果。</p></div>
+          <span class="status go"><span data-en>Live · Expanding</span><span data-zh>已上线 · 持续扩展</span></span></div>
         <div class="step"><div>
           <h4><span data-en>Community meetings</span><span data-zh>定期研讨</span></h4>
           <p data-en>Regular member meetings and workshops, in collaboration with CCF and related open-source organizations.</p>
