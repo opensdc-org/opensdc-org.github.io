@@ -31,3 +31,13 @@ When you change content, apply the same edit to both files.
 ```bash
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
+
+## Benchmark entry points
+
+OpenSDC-Bench is featured in the navigation, hero, dedicated `#benchmark` section, and roadmap in both language pages.
+
+- Published benchmark: https://opensdc-org.github.io/benchmark/
+- Evaluation code: https://github.com/opensdc-org/OpenSDC-Bench
+- Benchmark website source: https://github.com/opensdc-org/benchmark
+
+Keep these links and the English/Chinese descriptions consistent when editing either page. The `/benchmark/` site is deployed separately; this repository links to it.
