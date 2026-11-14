@@ -41,3 +41,14 @@ OpenSDC-Bench is featured in the navigation, hero, dedicated `#benchmark` sectio
 - Benchmark website source: https://github.com/opensdc-org/benchmark
 
 Keep these links and the English/Chinese descriptions consistent when editing either page. The `/benchmark/` site is deployed separately; this repository links to it.
+
+## Data Compression Survey
+
+- Page: https://opensdc-org.github.io/survey/
+- Source: [survey/index.html](survey/index.html)
+
+The survey is a standalone Chinese-language HTML page. It uses the main site's
+existing GitHub Pages deployment and has links from both homepages. Keep the
+route stable when updating the catalogue. Update the rendered paper cards and
+embedded paper data together, and retain source links and the search cutoff
+date.

@@ -120,8 +120,9 @@ html[lang="zh"] [data-zh]{display:revert}
       OpenSDC
     </a>
     <nav class="links">
-      <a class="hide-sm" href="#projects"><span data-en>Projects</span><span data-zh>项目</span></a>
       <a href="/benchmark/"><span data-en>Benchmark</span><span data-zh>评测榜单</span></a>
+      <a href="#projects"><span data-en>Compressors</span><span data-zh>压缩器</span></a>
+      <a href="/survey/" hreflang="zh-CN"><span data-en>Survey</span><span data-zh>文献综述</span></a>
       <a class="hide-sm" href="#roadmap"><span data-en>Roadmap</span><span data-zh>路线图</span></a>
       <a class="hide-sm" href="#join"><span data-en>Join</span><span data-zh>参与</span></a>
       <a href="https://github.com/opensdc-org">GitHub</a>
@@ -138,8 +139,8 @@ html[lang="zh"] [data-zh]{display:revert}
       <p class="lead" data-en>An open, neutral community for high-performance scientific data compression. We develop, maintain, and benchmark error-bounded lossy and lossless compressors for HPC and AI-for-Science, portable across CPUs, GPUs, and accelerators. With OpenSDC-Bench, we also provide open code, data, metrics, and leaderboards for fair, reproducible comparisons.</p>
       <p class="lead" data-zh>一个开放、中立的高性能科学数据压缩社区。我们研发、维护和评测面向高性能计算与科学智能（AI4S）的误差可控有损压缩与无损压缩软件，支持多种 CPU、GPU 与加速器平台。同时通过 OpenSDC-Bench 提供开放的评测代码、数据、指标与榜单，支持公平、可复现的比较。</p>
       <div class="btns">
-        <a class="btn primary" href="#projects"><span data-en>Explore projects</span><span data-zh>浏览项目</span></a>
-        <a class="btn ghost" href="/benchmark/"><span data-en>Explore benchmark</span><span data-zh>查看评测榜单</span></a>
+        <a class="btn primary" href="/benchmark/"><span data-en>Explore benchmark</span><span data-zh>查看评测榜单</span></a>
+        <a class="btn ghost" href="#projects"><span data-en>Browse compressors</span><span data-zh>浏览压缩器</span></a>
         <a class="btn ghost" href="https://github.com/opensdc-org"><span data-en>View on GitHub</span><span data-zh>访问 GitHub</span></a>
         <a class="btn ghost" href="#join"><span data-en>Join the community</span><span data-zh>加入社区</span></a>
       </div>
@@ -168,35 +169,9 @@ html[lang="zh"] [data-zh]{display:revert}
     </div>
   </section>
 
-  <section id="about">
+  <section id="projects">
     <div class="wrap">
-      <h2 data-en>Why OpenSDC</h2><h2 data-zh>为什么需要 OpenSDC</h2>
-      <p class="sub" data-en>Simulations, large instruments, and AI models now produce data far faster than storage, I/O, and networks can absorb. OpenSDC aims to make compression a dependable building block of scientific data management: high ratio, high throughput, strict error control, and portability across platforms.</p>
-      <p class="sub" data-zh>科学模拟、大科学装置和 AI 模型产生数据的速度，已远超存储、I/O 与网络的承载能力。OpenSDC 希望让压缩成为科学数据管理中可靠的基础组件：高压缩比、高吞吐、严格误差控制、跨平台可移植。</p>
-      <div class="principles">
-        <div class="principle"><div class="ic">O</div>
-          <h4><span data-en>Open</span><span data-zh>开放</span></h4>
-          <p data-en>Permissive licenses (BSD-3-Clause / MIT). Anyone can use, modify, and contribute.</p>
-          <p data-zh>采用 BSD-3-Clause / MIT 等宽松许可证，任何人均可使用、修改和贡献。</p></div>
-        <div class="principle"><div class="ic">N</div>
-          <h4><span data-en>Neutral</span><span data-zh>中立</span></h4>
-          <p data-en>Not tied to any single team or vendor. Every compressor joins on equal footing.</p>
-          <p data-zh>不绑定任何特定团队或厂商，各家压缩软件平等加入。</p></div>
-        <div class="principle"><div class="ic">P</div>
-          <h4><span data-en>Portable</span><span data-zh>可移植</span></h4>
-          <p data-en>Designed to run efficiently on diverse hardware, including domestic platforms.</p>
-          <p data-zh>面向多样化硬件（含国产平台）高效运行。</p></div>
-        <div class="principle"><div class="ic">R</div>
-          <h4><span data-en>Reproducible</span><span data-zh>可复现</span></h4>
-          <p data-en>Every claim backed by public datasets, benchmarks, and scripts.</p>
-          <p data-zh>所有性能结论均有公开数据集、基准与脚本支撑。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="alt">
-    <div class="wrap">
-      <h2 data-en>Projects</h2><h2 data-zh>项目</h2>
+      <h2 data-en>Compressors</h2><h2 data-zh>压缩器</h2>
       <p class="sub" data-en>General-purpose and domain-specific compressors hosted by OpenSDC. New projects are welcome.</p>
       <p class="sub" data-zh>OpenSDC 托管的通用型与领域专用压缩软件，欢迎更多项目加入。</p>
 
@@ -205,6 +180,15 @@ html[lang="zh"] [data-zh]{display:revert}
 
       <h3 class="group" data-en>Domain-specific compressors</h3><h3 class="group" data-zh>领域专用压缩器</h3>
       <div class="grid" id="domain"></div>
+    </div>
+  </section>
+
+  <section id="survey" class="alt" aria-labelledby="survey-title">
+    <div class="wrap">
+      <h2 id="survey-title"><span data-en>Data Compression Survey</span><span data-zh>数据压缩研究图谱</span></h2>
+      <p class="sub" data-en>A curated guide to data compression papers from 2019 to 2026 across HPC, systems, and computer architecture. Filter by venue, year, or topic, and follow links to the original research. The survey is currently available in Chinese.</p>
+      <p class="sub" data-zh>汇集 2019–2026 年高性能计算、系统和体系结构领域的数据压缩论文，可按发表场所、年份或主题筛选，并查看原文来源与研究趋势。</p>
+      <a class="btn ghost" href="/survey/" hreflang="zh-CN"><span data-en>Browse the survey →</span><span data-zh>浏览研究图谱 →</span></a>
     </div>
   </section>
 
@@ -243,7 +227,33 @@ html[lang="zh"] [data-zh]{display:revert}
     </div>
   </section>
 
-  <section id="join" class="alt">
+  <section id="about" class="alt">
+    <div class="wrap">
+      <h2 data-en>Why OpenSDC</h2><h2 data-zh>为什么需要 OpenSDC</h2>
+      <p class="sub" data-en>Simulations, large instruments, and AI models now produce data far faster than storage, I/O, and networks can absorb. OpenSDC aims to make compression a dependable building block of scientific data management: high ratio, high throughput, strict error control, and portability across platforms.</p>
+      <p class="sub" data-zh>科学模拟、大科学装置和 AI 模型产生数据的速度，已远超存储、I/O 与网络的承载能力。OpenSDC 希望让压缩成为科学数据管理中可靠的基础组件：高压缩比、高吞吐、严格误差控制、跨平台可移植。</p>
+      <div class="principles">
+        <div class="principle"><div class="ic">O</div>
+          <h4><span data-en>Open</span><span data-zh>开放</span></h4>
+          <p data-en>Permissive licenses (BSD-3-Clause / MIT). Anyone can use, modify, and contribute.</p>
+          <p data-zh>采用 BSD-3-Clause / MIT 等宽松许可证，任何人均可使用、修改和贡献。</p></div>
+        <div class="principle"><div class="ic">N</div>
+          <h4><span data-en>Neutral</span><span data-zh>中立</span></h4>
+          <p data-en>Not tied to any single team or vendor. Every compressor joins on equal footing.</p>
+          <p data-zh>不绑定任何特定团队或厂商，各家压缩软件平等加入。</p></div>
+        <div class="principle"><div class="ic">P</div>
+          <h4><span data-en>Portable</span><span data-zh>可移植</span></h4>
+          <p data-en>Designed to run efficiently on diverse hardware, including domestic platforms.</p>
+          <p data-zh>面向多样化硬件（含国产平台）高效运行。</p></div>
+        <div class="principle"><div class="ic">R</div>
+          <h4><span data-en>Reproducible</span><span data-zh>可复现</span></h4>
+          <p data-en>Every claim backed by public datasets, benchmarks, and scripts.</p>
+          <p data-zh>所有性能结论均有公开数据集、基准与脚本支撑。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
     <div class="wrap">
       <h2 data-en>Get involved</h2><h2 data-zh>参与方式</h2>
       <p class="sub" data-en>Researchers, students, and industry partners are all welcome.</p>
