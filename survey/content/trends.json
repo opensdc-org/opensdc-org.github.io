@@ -1,0 +1,148 @@
+[
+  {
+    "title": "01 · 从逐点误差界走向科学结论可信度",
+    "body": "误差有界有损压缩仍是科学数据减量的主线，但逐点误差小，不意味着派生量、拓扑、可视化或数值求解稳定。Foresight的分析感知评价、QoZ的目标质量优化、QPET的可移植QoI保真和稳定性保持压缩，推动工作从逐点误差走向ROI、QoI与最终任务质量。TOPIQ给出统计校准与置信区间，不能理解为所有查询都有确定性的最坏误差保证；ParticleGS保留的是渲染质量，也不能替代原始粒子场。",
+    "papers": [
+      "sc20-foresight",
+      "sc22-qoz",
+      "vldb25-qpet",
+      "sc25-stability",
+      "sc26-blockmgard",
+      "sc26-topiq",
+      "dac25-memsens"
+    ],
+    "question": "从用户真正关心的科学量反推误差预算，同时处理跨时间步误差积累、极端事件与非平滑查询。"
+  },
+  {
+    "title": "02 · GPU速度与压缩率必须一起优化",
+    "body": "cuSZ将预测型科学压缩系统性移植到GPU，cuSZp/cuSZp2侧重降低流水线成本，cuSZ-i/cuSZ-Hi强化预测与有损—无损协同。GPU内存带宽、核启动与线程间依赖决定压缩的可用性。单核融合和块内并行有利于速度，却可能削弱预测；自适应预测、缓存内分解及量化/熵编码分离试图修复这一矛盾。对比吞吐时必须同时看GPU型号、误差界与压缩比，不能把不同硬件上的GB/s直接排序。",
+    "papers": [
+      "pact20-cusz",
+      "sc23-cuszp",
+      "hpdc23-fzgpu",
+      "sc24-cuszi",
+      "sc25-cuszhi",
+      "sc26-fsz",
+      "sys-eurosys26-ibp",
+      "asplos25-float"
+    ],
+    "question": "在固定质量和实际数据分布下，联合优化压缩率、解压吞吐、显存占用及能耗。"
+  },
+  {
+    "title": "03 · 压缩深入内存、缓存与互连",
+    "body": "压缩已成为容量和带宽管理机制。GPU buddy memory、缓存熵感知编码和压缩内存地址转换共同说明：编码器之外，还需要解决标签开销、可变长对象定位、随机访问与溢出处理。FitFloat的极高加速来自避免统一内存换页，属于系统容量效应。",
+    "papers": [
+      "isca20-buddy",
+      "micro19-touche",
+      "isca24-dylect",
+      "isca25-ecco",
+      "sys-osdi24-sabre",
+      "sc26-fitfloat"
+    ],
+    "question": "在真实多租户负载下维持低尾延迟，控制元数据开销，适配CXL及分离式内存。"
+  },
+  {
+    "title": "04 · I/O与检查点从“少写字节”走向端到端管线",
+    "body": "压缩与I/O的盈亏点随存储设备速度变化：NVMe已经可能快于压缩器。HDF5集成通过预测输出大小和重排任务重叠压缩与写入，TAC/AMRIC针对AMR布局减少冗余处理。需要把暂存缓冲、任务调度、设备队列和数据恢复一起纳入优化。检查点还必须单独评估重启正确性；针对分析输出的有损方案不能直接等同于安全的检查点方案。",
+    "papers": [
+      "sc22-hdf5",
+      "hpdc22-tac",
+      "sc23-amric",
+      "sys-eurosys24-insitu",
+      "sc25-stability",
+      "sc26-zspdk",
+      "hpca25-cczns"
+    ],
+    "question": "针对检查点/重启做可重复的故障注入与误差传播评估，并让压缩调度适应计算和I/O的阶段性变化。"
+  },
+  {
+    "title": "05 · 通信压缩转向集合算法和拓扑共同设计",
+    "body": "减少通信字节数不必然缩短训练时间。压缩核争用GPU、解码串行段以及节点内外带宽层级都会限制收益。HiPress把压缩感知同步与压缩器开发框架结合，gZCCL优化GPU集合通信管线，hZCCL/ghZCCL把归约推进至压缩表示；NCCLZ进一步将编码嵌入通信原语，万卡研究又显示集合操作加速与训练端到端加速之间的差距。",
+    "papers": [
+      "sys-sosp21-hipress",
+      "asplos23-optimus",
+      "ics24-gzccl",
+      "sc24-hzccl",
+      "ics25-ghzccl",
+      "sys-nsdi24-thc",
+      "sc26-ncclz",
+      "sc26-10k"
+    ],
+    "question": "压缩、规约与传输能否融合；如何在网络带宽提高后保留收益，并控制误差累积与训练收敛成本。"
+  },
+  {
+    "title": "06 · AI/HPC融合具有两个不同方向",
+    "body": "一方面用压缩支持AI：梯度、激活和KV缓存成为通信与内存压缩对象；CacheGen与KVServe把质量、服务延迟和带宽动态联合考虑；DeltaZip压缩微调模型差分用于服务，ZipLLM则联合去重与无损差分编码用于模型存储。另一方面用AI改进科学压缩：NeurLZ使用在线学习修正误差，跨字段预测利用变量间关系；更新的生成模型则压缩遥感或粒子可视化表示。这两类结果的精度定义、训练成本和通用性不同。",
+    "papers": [
+      "hpdc19-deepsz",
+      "sc24-dlrm",
+      "ppopp25-compso",
+      "ics25-neurlz",
+      "sigcomm24-cachegen",
+      "sys-eurosys25-deltazip",
+      "sys-nsdi26-zipllm",
+      "sc26-earth"
+    ],
+    "question": "完整计入模型训练与重训成本、跨分布泛化风险、任务质量和压缩模型本身的存储。"
+  },
+  {
+    "title": "07 · 硬件协同从专用压缩器扩展到现有加速单元",
+    "body": "waveSZ联合设计波前预测与FPGA流水线，CEAZ将压缩推向网络端，CereSZ适配晶圆级加速器；压缩不再只是CPU库。专用压缩/解压单元、网络内无损压缩、SSD内压缩和GPU视频编解码单元提供不同部署途径。关键是编码格式与硬件的数据通路共同设计，并量化PCIe往返、专用单元利用率以及与主计算争用的成本。",
+    "papers": [
+      "ppopp20-wavesz",
+      "ics20-burstz",
+      "ics22-ceaz",
+      "hpdc24-ceresz",
+      "isca23-cdpu",
+      "micro25-netzip",
+      "micro25-llm265",
+      "sigcomm26-kvcodec"
+    ],
+    "question": "证明真实系统的面积、能耗、可移植性与端到端收益，而不只展示内核吞吐。"
+  },
+  {
+    "title": "08 · 从压一次解一次走向随机、渐进与压缩域访问",
+    "body": "科学工作流常只需要某个区域、某个精度或某种派生操作。MDR/IPComp侧重数值精度渐进，STZ结合流式与随机访问，VGC支持局部解压，hZCCL在压缩域归约；CLP、μSlope、LogCrisp和SEAL则把日志压缩表示与查询设计结合。这些设计可减少解压放大，并使存储格式与分析算法更紧密地结合。不同表示支持的操作集合不同；同态压缩也不等于通用计算或密码学同态加密。",
+    "papers": [
+      "sc21-mdr",
+      "hpdc25-ipcomp",
+      "sc25-stz",
+      "sc25-hpmdr",
+      "sc25-vgc",
+      "sc24-hzccl",
+      "sys-osdi21-clp",
+      "sys-osdi24-muslope",
+      "sys-atc25-logcrisp",
+      "sys-sec21-seal",
+      "isca26-rst"
+    ],
+    "question": "构建同时具备良好压缩率、可更新性、部分读取与可靠误差传播的表示。"
+  },
+  {
+    "title": "09 · 自适应和在线决策成为系统能力",
+    "body": "由早期局部预测器与参数选择，到FAZ跨模块组合和宇宙学率—质量建模，配置选择逐步转向多目标决策：目标压缩率、吞吐、质量预算、服务SLO和带宽变化共同决定策略。MILIO用采样减少探索开销，FSZ做细粒度预测器选择，KVServe在离线候选与在线反馈之间衔接；TVStore将压缩精度随数据年龄变化纳入容量控制。",
+    "papers": [
+      "sc19-hybrid",
+      "hpdc20-szauto",
+      "hpdc21-adaptive",
+      "ics23-faz",
+      "sys-fast22-tvstore",
+      "sc26-milio",
+      "sigcomm26-kvserve"
+    ],
+    "question": "控制采样与搜索开销、防止错误预测导致SLO失守，并识别何时应跳过压缩。"
+  },
+  {
+    "title": "10 · 压缩质量—性能权衡应以工作流为单位",
+    "body": "未来有价值的比较应同时展示率失真曲线、压缩/解压时间、数据移动、总体内存、能耗与下游质量。科学误差界、任务准确率“无下降”和字节级无损是不同承诺。万卡训练和FitFloat说明局部指标与系统收益可能相差很大；本文因此不构造跨论文性能排行榜。",
+    "papers": [
+      "sc20-foresight",
+      "sc22-hdf5",
+      "sc25-practice",
+      "sc25-stability",
+      "sc26-10k",
+      "sc26-topiq"
+    ],
+    "question": "统一可复现数据集、误差口径、硬件与基线，报告平均值/分位数/最坏值，避免仅比较各论文峰值。"
+  }
+]

@@ -47,8 +47,12 @@ Keep these links and the English/Chinese descriptions consistent when editing ei
 - Page: https://opensdc-org.github.io/survey/
 - Source: [survey/index.html](survey/index.html)
 
-The survey is a standalone Chinese-language HTML page. It uses the main site's
+The survey is a Chinese-language static page with its data, content, styles,
+and interaction script maintained under `survey/`. It uses the main site's
 existing GitHub Pages deployment and has links from both homepages. Keep the
-route stable when updating the catalogue. Update the rendered paper cards and
-embedded paper data together, and retain source links and the search cutoff
-date.
+route stable when updating the catalogue.
+
+See [survey/README.md](survey/README.md) for the source layout. After editing the
+paper data or content, run `python3 survey/scripts/build.py` and commit the
+updated sources together with the generated `survey/index.html`. Retain source
+links and the literature search cutoff date.
