@@ -318,13 +318,16 @@ const PROJECTS = [
   { name:"SolarZip", group:"domain", domain:"Solar physics", domainZh:"太阳物理", repo:"https://github.com/opensdc-org/SolarZip",
     en:"Efficient and adaptive compression framework for solar EUV imaging data.",
     zh:"面向太阳极紫外（EUV）成像数据的高效自适应压缩框架。",
-    pub:"A&A '25", pubUrl:"https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html" }
+    pub:"A&A '25", pubUrl:"https://www.aanda.org/articles/aa/full_html/2025/10/aa55193-25/aa55193-25.html" },
+  { name:"APZ", group:"domain", domain:"Particle data", domainZh:"粒子数据", repo:"https://github.com/opensdc-org/APZ",
+    en:"Error-bounded compression of particle positions and velocities in cosmological simulations.",
+    zh:"目前面向宇宙学模拟，提供粒子位置和速度的误差可控压缩。" }
 ];
 
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 function card(p){
-  const pubEn = esc(p.pub), pubZh = esc(p.pubZh || p.pub);
-  const pubTag = p.pubUrl
+  const pubEn = esc(p.pub || ""), pubZh = esc(p.pubZh || p.pub || "");
+  const pubTag = !p.pub ? "" : p.pubUrl
     ? `<a class="tag pub" href="${esc(p.pubUrl)}"><span data-en>${pubEn}</span><span data-zh>${pubZh}</span></a>`
     : `<span class="tag pub"><span data-en>${pubEn}</span><span data-zh>${pubZh}</span></span>`;
   const dom = p.domain ? `<span class="tag dom"><span data-en>${esc(p.domain)}</span><span data-zh>${esc(p.domainZh||p.domain)}</span></span>` : "";
