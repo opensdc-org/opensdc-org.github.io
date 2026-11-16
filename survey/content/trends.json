@@ -15,7 +15,7 @@
   },
   {
     "title": "02 · GPU速度与压缩率必须一起优化",
-    "body": "cuSZ将预测型科学压缩系统性移植到GPU，cuSZp/cuSZp2侧重降低流水线成本，cuSZ-i/cuSZ-Hi强化预测与有损—无损协同。GPU内存带宽、核启动与线程间依赖决定压缩的可用性。单核融合和块内并行有利于速度，却可能削弱预测；自适应预测、缓存内分解及量化/熵编码分离试图修复这一矛盾。对比吞吐时必须同时看GPU型号、误差界与压缩比，不能把不同硬件上的GB/s直接排序。",
+    "body": "cuSZ将预测型科学压缩系统性移植到GPU，cuSZp/cuSZp2侧重降低流水线成本，cuSZ-i/cuSZ-Hi强化预测与有损—无损协同。TZ则改用全局Tucker分解换取更高压缩率。GPU内存带宽、核启动与线程间依赖决定压缩的可用性。单核融合和块内并行有利于速度，却可能削弱预测；自适应预测、缓存内分解及量化/熵编码分离试图修复这一矛盾。对比吞吐时必须同时看GPU型号、误差界与压缩比，不能把不同硬件上的GB/s直接排序。",
     "papers": [
       "pact20-cusz",
       "sc23-cuszp",
@@ -24,7 +24,8 @@
       "sc25-cuszhi",
       "sc26-fsz",
       "sys-eurosys26-ibp",
-      "asplos25-float"
+      "asplos25-float",
+      "hpdc26-tz"
     ],
     "question": "在固定质量和实际数据分布下，联合优化压缩率、解压吞吐、显存占用及能耗。"
   },
@@ -102,15 +103,17 @@
   },
   {
     "title": "08 · 从压一次解一次走向随机、渐进与压缩域访问",
-    "body": "科学工作流常只需要某个区域、某个精度或某种派生操作。MDR/IPComp侧重数值精度渐进，STZ结合流式与随机访问，VGC支持局部解压，hZCCL在压缩域归约；CLP、μSlope、LogCrisp和SEAL则把日志压缩表示与查询设计结合。这些设计可减少解压放大，并使存储格式与分析算法更紧密地结合。不同表示支持的操作集合不同；同态压缩也不等于通用计算或密码学同态加密。",
+    "body": "科学工作流常只需要某个区域、某个精度或某种派生操作。MDR/IPComp侧重数值精度渐进，STZ结合流式与随机访问，VGC支持局部解压，OPAL为通用压缩器补上按需检索，hZCCL在压缩域归约；CLP、LogGrep、μSlope、LogCrisp和SEAL则把日志压缩表示与查询设计结合。这些设计可减少解压放大，并使存储格式与分析算法更紧密地结合。不同表示支持的操作集合不同；同态压缩也不等于通用计算或密码学同态加密。",
     "papers": [
       "sc21-mdr",
       "hpdc25-ipcomp",
       "sc25-stz",
       "sc25-hpmdr",
       "sc25-vgc",
+      "hpdc26-opal",
       "sc24-hzccl",
       "sys-osdi21-clp",
+      "sys-eurosys23-loggrep",
       "sys-osdi24-muslope",
       "sys-atc25-logcrisp",
       "sys-sec21-seal",

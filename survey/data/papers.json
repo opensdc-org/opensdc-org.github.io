@@ -16,15 +16,14 @@
       "学习压缩"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap525&sess=sess215",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-blockmgard",
@@ -43,15 +42,14 @@
       "质量保证"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 17 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap496&sess=sess203",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-10k",
@@ -69,15 +67,14 @@
       "自适应"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap224&sess=sess233",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-fsz",
@@ -95,15 +92,14 @@
       "自适应"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap374&sess=sess195",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-fitfloat",
@@ -132,8 +128,7 @@
         "label": "作者公开正文：摘要与设计"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-milio",
@@ -152,15 +147,14 @@
       "自适应"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 17 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap886&sess=sess203",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-progressive",
@@ -173,20 +167,19 @@
     "results": "官方公开摘要只陈述改进渐进读取效率，未报告可核验的数值；不推断压缩比或加速倍数。",
     "scenario": "超大规模科学模拟归档与多精度按需读取。",
     "tags": [
-      "渐进访问",
+      "渐进检索",
       "误差有界",
       "科学数据"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 17 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap332&sess=sess203",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-szgen",
@@ -211,8 +204,7 @@
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "appendix",
-    "selection": "主要检索范围"
+    "status": "appendix"
   },
   {
     "id": "sc26-ncclz",
@@ -230,15 +222,14 @@
       "硬件协同"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。HPDC 2026 另有同名两页海报（见附录），不重复计数。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap130&sess=sess233",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-earth",
@@ -256,15 +247,14 @@
       "学习压缩"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap118&sess=sess207",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-topiq",
@@ -283,7 +273,7 @@
       "AI融合"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 17 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap529&sess=sess203",
@@ -294,8 +284,7 @@
         "label": "作者预印本 / 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-zspdk",
@@ -313,15 +302,14 @@
       "硬件协同"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 17 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap1023&sess=sess202",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc26-hzccl2",
@@ -339,15 +327,14 @@
       "误差有界"
     ],
     "evidence": "官方摘要",
-    "caveat": "截至2026-11-13：官方主会 Paper 日程已确认；报告尚未举行。未核实正式论文集 DOI，摘要数字尚未逐表复核。",
+    "caveat": "截至2026-11-16：官方主会 Paper 日程已确认，报告定于 11 月 18 日；正式论文集 DOI 尚未登记，摘要数字尚未逐表复核。",
     "sources": [
       {
         "url": "https://sc26.conference-program.com/presentation/?id=pap1042&sess=sess207",
         "label": "SC26 官方 Paper 摘要"
       }
     ],
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sc25-cuszhi",
@@ -374,12 +361,11 @@
       "误差有界",
       "科学数据",
       "自适应",
-      "软硬协同"
+      "硬件协同"
     ],
     "evidence": "摘要与正文",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc25-vgc",
@@ -401,13 +387,12 @@
       "GPU",
       "误差有界",
       "随机访问",
-      "内存",
-      "AI/HPC"
+      "内存压缩",
+      "AI融合"
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "选择性解压吞吐与全量解压吞吐口径不同；不将 cuSZp3 当成另一篇独立论文。",
-    "selection": "主要检索范围"
+    "caveat": "选择性解压吞吐与全量解压吞吐口径不同；不将 cuSZp3 当成另一篇独立论文。"
   },
   {
     "id": "sc25-hpmdr",
@@ -442,8 +427,7 @@
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "正式版与预印本报告数字不同；此处采用正式论文，且 CPU/GPU 比较包含硬件差异。",
-    "selection": "主要检索范围"
+    "caveat": "正式版与预印本报告数字不同；此处采用正式论文，且 CPU/GPU 比较包含硬件差异。"
   },
   {
     "id": "sc25-stz",
@@ -474,8 +458,7 @@
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "分辨率渐进重建与逐渐提高数值精度不同，不与 IPComp 的精度渐进指标直接等同。",
-    "selection": "主要检索范围"
+    "caveat": "分辨率渐进重建与逐渐提高数值精度不同，不与 IPComp 的精度渐进指标直接等同。"
   },
   {
     "id": "sc25-stability",
@@ -502,7 +485,7 @@
     "results": "Frontier 实验中检查点写/读最高加速 8.4/6.3 倍；继续模拟的相对 L2 误差约为 2×10⁻⁶。",
     "scenario": "大规模 PDE、波动方程模拟和长期检查点重启。",
     "tags": [
-      "检查点",
+      "I/O与检查点",
       "科学数据",
       "误差有界",
       "物理约束",
@@ -510,8 +493,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc25-practice",
@@ -545,8 +527,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc25-lscomp",
@@ -581,8 +562,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc24-dlrm",
@@ -600,8 +580,8 @@
         "label": "作者机构摘要"
       },
       {
-        "url": "https://home.fanjiang.net/pdfs/SC24_DLRM_Communication.pdf",
-        "label": "作者公开论文"
+        "url": "https://arxiv.org/abs/2407.04272",
+        "label": "作者公开预印本"
       }
     ],
     "problem": "分布式 DLRM 训练需要大量 all-to-all 交换 embedding，通信成为瓶颈。",
@@ -609,7 +589,7 @@
     "results": "实验报告整体训练加速 1.38 倍，对模型准确率影响较小；摘要未给出可统一引用的具体准确率损失数值。",
     "scenario": "多 GPU 推荐模型训练中的 embedding 通信。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "GPU",
       "通信压缩",
       "误差有界",
@@ -617,8 +597,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc24-cuszi",
@@ -648,8 +627,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "部分 SC 程序页不带 cuSZ-i 前缀，按正式发表名称统一。",
-    "selection": "主要检索范围"
+    "caveat": "部分 SC 程序页不带 cuSZ-i 前缀，按正式发表名称统一。"
   },
   {
     "id": "sc24-cuszp2",
@@ -679,8 +657,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "不同基线类别和传输路径影响倍数，平均吞吐仅对应文中 A100 实验。",
-    "selection": "主要检索范围"
+    "caveat": "不同基线类别和传输路径影响倍数，平均吞吐仅对应文中 A100 实验。"
   },
   {
     "id": "sc24-hzccl",
@@ -714,8 +691,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "采用正式题名 Co-Designed Homomorphic Compression；早期版本的 Operation-supported 标题不另计。",
-    "selection": "主要检索范围"
+    "caveat": "采用正式题名 Co-Designed Homomorphic Compression；早期版本的 Operation-supported 标题不另计。"
   },
   {
     "id": "sc23-amric",
@@ -735,11 +711,15 @@
       {
         "url": "https://escholarship.org/uc/item/9pn2v2bv",
         "label": "LBNL 机构公开论文"
+      },
+      {
+        "url": "https://arxiv.org/abs/2307.09609",
+        "label": "作者公开预印本"
       }
     ],
     "problem": "AMR 的多层、不规则网格布局使直接套用通用有损压缩难以兼顾压缩质量与 I/O。",
     "method": "围绕 AMR 数据层次和网格块重组压缩输入，优化数据布局、压缩参数与并行 I/O 集成，形成原位压缩框架。",
-    "results": "官方摘要在 512 核实验中报告，相对 AMReX 原有压缩方式，压缩比最多提高 81 倍，I/O 性能最多提高 39 倍。",
+    "results": "正式摘要在 Summit 的 4,096 CPU 核实验中报告，相对 AMReX 原有压缩方式，压缩比最多提高 81 倍，I/O 性能最多提高 39 倍。",
     "scenario": "基于 AMReX 的自适应网格科学模拟输出。",
     "tags": [
       "AMR",
@@ -750,8 +730,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "公开预印本与官方会议摘要所述实验规模不同；此处采用官方会议摘要的 512 核口径。",
-    "selection": "主要检索范围"
+    "caveat": "DOI 登记的正式摘要与 arXiv 预印本均为 4,096 CPU 核；本条此前记为 512 核，2026-11-16 复核后改按正式摘要。SC23 官方页面拒绝自动访问，未能复核其原文。"
   },
   {
     "id": "sc23-tlr",
@@ -765,8 +744,8 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://cerebras.ai/wp-content/uploads/2023/11/3581784.3627042.pdf",
-        "label": "作者单位公开全文"
+        "url": "https://hdl.handle.net/10754/694388",
+        "label": "KAUST 机构仓储记录"
       }
     ],
     "problem": "地震反演的多维卷积算子占用巨大内存，难以放入晶圆级设备有限的片上 SRAM。",
@@ -776,13 +755,12 @@
     "tags": [
       "代数压缩",
       "硬件协同",
-      "内存",
+      "内存压缩",
       "科学数据"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "属于低秩代数数据缩减；带宽数字针对主要内核，不能作为通用字节压缩器吞吐，也不是完整应用的压缩/解压吞吐。",
-    "selection": "主要检索范围"
+    "caveat": "属于低秩代数数据缩减；带宽数字针对主要内核，不能作为通用字节压缩器吞吐，也不是完整应用的压缩/解压吞吐。"
   },
   {
     "id": "sc23-cuszp",
@@ -812,8 +790,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "95.53 倍为端到端比较，不等同于所有大数组的纯内核吞吐提升。",
-    "selection": "主要检索范围"
+    "caveat": "95.53 倍为端到端比较，不等同于所有大数组的纯内核吞吐提升。"
   },
   {
     "id": "sc22-hdf5",
@@ -843,8 +820,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc22-qoz",
@@ -878,8 +854,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc21-mdr",
@@ -913,8 +888,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc21-resilient",
@@ -947,8 +921,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "预印本题名为 SDC Resilient Error-Bounded Lossy Compressor，不将早期版本与正式论文重复计数。",
-    "selection": "主要检索范围"
+    "caveat": "预印本题名为 SDC Resilient Error-Bounded Lossy Compressor，不将早期版本与正式论文重复计数。"
   },
   {
     "id": "sc21-ndzip",
@@ -982,8 +955,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sc20-foresight",
@@ -1009,12 +981,11 @@
       "科学数据",
       "质量评估",
       "数据缩减",
-      "AI/HPC"
+      "AI融合"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "纳入理由是数据缩减与压缩质量评估本身为研究主题，而非提出新的单一编码器。",
-    "selection": "主要检索范围"
+    "caveat": "纳入理由是数据缩减与压缩质量评估本身为研究主题，而非提出新的单一编码器。"
   },
   {
     "id": "sc19-quantum",
@@ -1041,15 +1012,14 @@
     "results": "在 4,096 个 Theta 节点、768 TB 内存上运行 61 量子比特 Grover 电路；其未压缩状态理论需 32 EB。测试电路可增加 2–16 个可模拟量子比特。",
     "scenario": "量子全状态模拟，尤其具有可压缩结构的电路状态。",
     "tags": [
-      "内存",
+      "内存压缩",
       "误差有界",
       "应用协同",
       "量子模拟"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "61 比特结果针对 Grover 等特定电路，不能推广为任意随机量子电路均有相同压缩比；需权衡计算时间与保真度。",
-    "selection": "主要检索范围"
+    "caveat": "61 比特结果针对 Grover 等特定电路，不能推广为任意随机量子电路均有相同压缩比；需权衡计算时间与保真度。"
   },
   {
     "id": "sc19-hybrid",
@@ -1083,8 +1053,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ppopp26-coccl",
@@ -1102,7 +1071,7 @@
         "label": "ACM SIGPLAN 官方论文目录与摘要"
       },
       {
-        "url": "https://github.com/hpdps-group/COCCL",
+        "url": "https://github.com/hpdss-group/COCCL",
         "label": "作者实现"
       }
     ],
@@ -1111,15 +1080,14 @@
     "results": "对最多 70 亿参数的 GPT/Qwen 训练评估，最优 COCCL-3D 配置使训练吞吐提高 1.24 倍，同时保持训练精度。",
     "scenario": "GPU 集群上的数据、张量与流水线并行大模型训练。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "通信压缩",
       "GPU",
       "自适应"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ppopp26-prism",
@@ -1149,8 +1117,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "数据体积与吞吐是不同维度；需保留论文给定的 GPU 基线和误差条件。",
-    "selection": "主要检索范围"
+    "caveat": "数据体积与吞吐是不同维度；需保留论文给定的 GPU 基线和误差条件。"
   },
   {
     "id": "ppopp25-compso",
@@ -1177,7 +1144,7 @@
     "results": "在测试任务中报告压缩比 22.1 倍，通信最高加速 14.2 倍，端到端训练最高加速 1.9 倍，并保持所测模型的准确率。",
     "scenario": "K-FAC 等二阶优化器的分布式 DNN 训练。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "梯度压缩",
       "通信压缩",
       "GPU",
@@ -1185,35 +1152,41 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ppopp21-poster",
     "title": "A Novel Memory-Efficient Deep Learning Training Framework via Error-Bounded Lossy Compression",
     "venue": "PPoPP",
     "year": 2021,
-    "url": "https://ppopp21.sigplan.org/details/PPoPP-2021-main-conference/20/POSTER-A-Novel-Memory-Efficient-Deep-Learning-Training-Framework-via-Error-Bounded-L",
+    "url": "https://doi.org/10.1145/3437801.3441597",
     "sources": [
       {
-        "url": "https://ppopp21.sigplan.org/details/PPoPP-2021-main-conference/20/POSTER-A-Novel-Memory-Efficient-Deep-Learning-Training-Framework-via-Error-Bounded-L",
+        "url": "https://doi.org/10.1145/3437801.3441597",
         "label": "正式论文 / DOI"
+      },
+      {
+        "url": "https://ppopp21.sigplan.org/details/PPoPP-2021-main-conference/20/POSTER-A-Novel-Memory-Efficient-Deep-Learning-Training-Framework-via-Error-Bounded-L",
+        "label": "PPoPP 2021 官方海报记录"
+      },
+      {
+        "url": "https://arxiv.org/abs/2011.09017",
+        "label": "作者完整预印本"
       }
     ],
-    "problem": "训练中间数据占用大量内存。",
-    "method": "通过误差有界压缩减少训练内存需求；官方会议条目标记为 POSTER。",
-    "results": "实验细节尚未完成核验；与后续 COMET 等工作应注意版本关联。",
-    "scenario": "深度学习训练内存压缩。",
+    "problem": "DNN 训练需在前向传播时保存中间激活数据供反向传播使用，内存需求限制可训练的网络规模；重计算与数据迁移方案开销高或受互连带宽限制。",
+    "method": "以误差有界有损压缩保存激活数据；给出理论分析并改进压缩器，动态配置误差界并调整批大小，以利用节省出的内存。",
+    "results": "4 种 CNN、ImageNet：训练内存消耗相对基线训练和已有带压缩的框架最多降低 13.5× 和 1.8×，精度基本无损失。",
+    "scenario": "CNN 训练中的激活数据内存压缩。",
     "tags": [
-      "AI/HPC",
-      "内存",
+      "AI融合",
+      "内存压缩",
       "误差有界",
       "海报"
     ],
-    "evidence": "官方记录",
+    "evidence": "ACM 正式摘要",
     "status": "appendix",
-    "caveat": "PPoPP2021 海报记录已确认；完整方法与实验资料尚待核验，列入附录。",
-    "selection": "主要检索范围"
+    "caveat": "三页海报论文（pp. 485–487），按海报列入附录；完整版本见 arXiv:2011.09017。"
   },
   {
     "id": "ppopp20-wavesz",
@@ -1247,8 +1220,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics26-gfaz",
@@ -1282,8 +1254,7 @@
     ],
     "evidence": "官方记录与作者实现",
     "status": "main",
-    "caveat": "核心为压缩已确认，定量结果待正文复核。",
-    "selection": "主要检索范围"
+    "caveat": "核心为压缩已确认，定量结果待正文复核。"
   },
   {
     "id": "ics26-gpz",
@@ -1317,8 +1288,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "早期预印本与正式版数据集数不同，此处按正式机构记录的六个数据集。",
-    "selection": "主要检索范围"
+    "caveat": "早期预印本与正式版数据集数不同，此处按正式机构记录的六个数据集。"
   },
   {
     "id": "ics26-ibex",
@@ -1349,15 +1319,14 @@
     "results": "论文公开版本报告相对现有 promotion/block 方案平均性能提高 1.28–1.40 倍。",
     "scenario": "CXL 内存扩展、压缩内存容量与带宽管理。",
     "tags": [
-      "内存",
+      "内存压缩",
       "CXL",
       "硬件协同",
       "无损"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics26-pacer",
@@ -1379,19 +1348,17 @@
         "label": "作者论文目录"
       }
     ],
-    "problem": "MPI 并行应用的网络速率控制与通信开销。",
-    "method": "题名包含自适应压缩，但未获得摘要/全文，尚无法判定压缩是否足够构成核心贡献。",
-    "results": "未核验。",
-    "scenario": "MPI 网络控制与并行通信。",
+    "problem": "HPC 与 AI 负载的网络速率控制依赖硬件特性或内核机制，需要特权，且不感知应用语义。",
+    "method": "在 MPI progress engine 中实现用户态、语义感知的速率控制；把限速引入的时间空隙用于自适应流式压缩以减少传输字节，并解析推导最优 pacing 窗口。",
+    "results": "摘要报告共置运行的公平性最高改善 5.6×，MPI 集合通信延迟最多降低 72%，25 Gbps 约束下 Llama 代理基准的训练时间最多减少 18%。",
+    "scenario": "MPI 并行应用的用户态限速与通信压缩。",
     "tags": [
       "通信压缩",
-      "自适应",
-      "待核验"
+      "自适应"
     ],
-    "evidence": "官方记录",
+    "evidence": "摘要",
     "status": "appendix",
-    "caveat": "压缩是否构成核心贡献尚待确认，列入附录。",
-    "selection": "主要检索范围"
+    "caveat": "边缘相关：主题是 MPI 用户态速率控制，自适应压缩是其协同设计的一部分；按压缩核心贡献的严格口径列入附录。摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取。"
   },
   {
     "id": "ics25-bmqsim",
@@ -1415,15 +1382,14 @@
     "scenario": "受内存容量限制的量子电路全状态模拟。",
     "tags": [
       "量子模拟",
-      "内存",
+      "内存压缩",
       "GPU",
       "误差有界",
       "应用协同"
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "保真度和内存改善取决于电路结构；不把不同硬件的 CPU/GPU 大倍数比较作为通用算法收益。",
-    "selection": "主要检索范围"
+    "caveat": "保真度和内存改善取决于电路结构；不把不同硬件的 CPU/GPU 大倍数比较作为通用算法收益。"
   },
   {
     "id": "ics25-neurlz",
@@ -1446,7 +1412,7 @@
     "results": "在 Nyx、Miranda、Hurricane 数据上的特定设置中，前五个训练 epoch 即可获得约 89% 比特率下降，最高约 94%；比较以相同重建失真为条件。",
     "scenario": "具有跨字段相关性的多物理场科学数据。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "在线学习",
       "科学数据",
       "误差有界",
@@ -1454,8 +1420,7 @@
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "论文区分严格 1 倍与放宽 2 倍误差界的模式；学习成本需计入端到端，不能将最优比特率下降视为免费收益。",
-    "selection": "主要检索范围"
+    "caveat": "论文区分严格 1 倍与放宽 2 倍误差界的模式；学习成本需计入端到端，不能将最优比特率下降视为免费收益。"
   },
   {
     "id": "ics25-aatrox",
@@ -1485,8 +1450,7 @@
     ],
     "evidence": "摘要与正文",
     "status": "main",
-    "caveat": "基线执行路径不同，250 倍不能解释为同类纯 GPU 内核的普遍提升。",
-    "selection": "主要检索范围"
+    "caveat": "基线执行路径不同，250 倍不能解释为同类纯 GPU 内核的普遍提升。"
   },
   {
     "id": "ics25-ghzccl",
@@ -1516,8 +1480,7 @@
     ],
     "evidence": "摘要与正文",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics24-gzccl",
@@ -1551,8 +1514,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics23-faz",
@@ -1583,8 +1545,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics23-gpulz",
@@ -1602,7 +1563,7 @@
         "label": "作者机构摘要"
       },
       {
-        "url": "https://github.com/hpdps-group/ICS23-GPULZ",
+        "url": "https://github.com/hpdss-group/ICS23-GPULZ",
         "label": "作者实现"
       }
     ],
@@ -1618,8 +1579,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "峰值加速来自具体基线与输入；不代表对所有 GPU 无损压缩器的一致提升。",
-    "selection": "主要检索范围"
+    "caveat": "峰值加速来自具体基线与输入；不代表对所有 GPU 无损压缩器的一致提升。"
   },
   {
     "id": "ics23-huffman",
@@ -1654,8 +1614,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "ics22-ceaz",
@@ -1690,8 +1649,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "不同公开版本摘要的比较数字存在差异；此处采用 ACM 正式摘要的 2.3/3.0 倍，未混合引用其他版本。",
-    "selection": "主要检索范围"
+    "caveat": "不同公开版本摘要的比较数字存在差异；此处采用 ACM 正式摘要的 2.3/3.0 倍，未混合引用其他版本。"
   },
   {
     "id": "ics20-burstz",
@@ -1723,8 +1681,7 @@
     ],
     "evidence": "摘要与正文片段",
     "status": "main",
-    "caveat": "性能数字对应文中 stencil 原型及指定比较配置；理想化核心基线是投影结果，不等于通用应用实测上限。压缩提高有效带宽而非物理 PCIe 带宽。",
-    "selection": "主要检索范围"
+    "caveat": "性能数字对应文中 stencil 原型及指定比较配置；理想化核心基线是投影结果，不等于通用应用实测上限。压缩提高有效带宽而非物理 PCIe 带宽。"
   },
   {
     "id": "hpdc26-theory",
@@ -1738,7 +1695,7 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://hpdc.utah.edu/2026/program.html",
+        "url": "https://hpdc.sci.utah.edu/2026/program.html",
         "label": "HPDC26 官方程序"
       }
     ],
@@ -1754,8 +1711,7 @@
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc26-grouptopk",
@@ -1769,7 +1725,7 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://hpdc.utah.edu/2026/program.html",
+        "url": "https://hpdc.sci.utah.edu/2026/program.html",
         "label": "HPDC26 官方程序"
       },
       {
@@ -1777,19 +1733,18 @@
         "label": "DBLP 页码 570–571"
       }
     ],
-    "problem": "边缘设备分布式训练的通信成本。",
-    "method": "正式题名以通信压缩为主题；未获取足够第一方方法内容。",
-    "results": "未核验。",
-    "scenario": "边缘分布式训练。",
+    "problem": "边缘设备分布式训练的通信成本高；全局 TopK 在梯度高度稀疏且分布不均时丢失信息，计算开销也较大。",
+    "method": "Group-TopK 按神经网络梯度的非均匀分布把梯度分组，每组只保留最大的 k 个值，计算量低于全局 TopK。",
+    "results": "Jetson Orin NX 与 Jetson Nano 集群：相对基线最高加速 2.51×，模型精度损失不超过 2%，优于 Sample-TopK 和 Global-TopK。",
+    "scenario": "边缘设备上的分布式训练。",
     "tags": [
       "梯度压缩",
       "通信压缩",
       "海报"
     ],
-    "evidence": "官方记录",
+    "evidence": "摘要",
     "status": "appendix",
-    "caveat": "两页短文记录已确认；方法与实验资料尚待核验，列入附录。",
-    "selection": "主要检索范围"
+    "caveat": "两页海报短文（pp. 570–571），按海报列入附录。摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取。"
   },
   {
     "id": "hpdc26-ncclz",
@@ -1803,27 +1758,30 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://hpdc.utah.edu/2026/program.html",
+        "url": "https://hpdc.sci.utah.edu/2026/program.html",
         "label": "HPDC26 官方程序"
       },
       {
         "url": "https://dblp.org/rec/conf/hpdc/WangYY26.html",
         "label": "DBLP 页码 577–578"
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.12396",
+        "label": "作者公开预印本"
       }
     ],
-    "problem": "GPU 集合通信的压缩整合。",
-    "method": "题名表明解耦量化与熵编码；正式记录仅两页，未取得足够实验文本。",
-    "results": "未核验。",
+    "problem": "大规模多节点 GPU 作业受节点间网络传输字节数限制；已有压缩集合通信库游离于 NCCL 执行模型之外，或只依赖量化。",
+    "method": "把有损量化与无损熵编码解耦：通信前一次性量化为整数符号，在 NCCL 通信流水线内做无损字节削减；运行时在原始传输、定长打包和 GPU Huffman 之间选择。",
+    "results": "Polaris 上的初步结果：压缩比最高 9.65×，端到端 AllReduce 吞吐相对原生 NCCL 最高提高 4.79×。",
     "scenario": "GPU 压缩集合通信。",
     "tags": [
       "GPU",
       "通信压缩",
       "海报"
     ],
-    "evidence": "官方记录",
+    "evidence": "摘要",
     "status": "appendix",
-    "caveat": "短文/海报记录已确认；方法与实验尚未充分核验，列入附录。",
-    "selection": "主要检索范围"
+    "caveat": "两页海报短文，HPDC26 论文集中同题有两条记录（pp. 577–578、596–597）；完整论文见主清单 SC 2026 条目，不重复计数。海报摘要的 9.65× 指压缩比，SC26 摘要的 9.65× 指相对 NCCL 的加速，口径不同。"
   },
   {
     "id": "hpdc26-opal",
@@ -1837,7 +1795,7 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://hpdc.utah.edu/2026/program.html",
+        "url": "https://hpdc.sci.utah.edu/2026/program.html",
         "label": "HPDC26 官方程序"
       },
       {
@@ -1845,19 +1803,19 @@
         "label": "作者论文目录"
       }
     ],
-    "problem": "科学压缩中的按需渐进读取。",
-    "method": "官方记录确认主题为按需、渐进科学有损压缩；未获得可读取的第一方摘要或正文，暂不推断具体机制。",
-    "results": "定量结果尚未从第一方摘要或全文核验。",
-    "scenario": "科学数据压缩与渐进检索。",
+    "problem": "误差有界压缩器把压缩数据当作整体，访问特定区域或精度也要解压大量数据；支持灵活访问的存储方案又缺乏现代压缩的效率。",
+    "method": "OPAL 通用框架让通用有损压缩器具备按需检索能力，支持跨空间区域、分辨率和精度的渐进访问；OPALI 是原生面向灵活访问设计的压缩算法，采用 shadow anchor、混合存储和分组位平面编码。",
+    "results": "摘要称在真实科学数据集上，OPAL 可把标准压缩器变为灵活检索引擎，OPALI 的压缩比与检索性能更优；摘要未给出定量数字。",
+    "scenario": "科学数据的按需、渐进与局部检索。",
     "tags": [
       "渐进检索",
+      "随机访问",
       "科学数据",
-      "有损"
+      "误差有界"
     ],
-    "evidence": "官方记录",
-    "status": "appendix",
-    "caveat": "正式发表已确认，方法和实验待核验。",
-    "selection": "主要检索范围"
+    "evidence": "摘要",
+    "status": "main",
+    "caveat": "摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取；定量结果待正文核验。"
   },
   {
     "id": "hpdc26-qpror",
@@ -1888,8 +1846,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc26-tz",
@@ -1903,7 +1860,7 @@
         "label": "正式论文 / DOI"
       },
       {
-        "url": "https://hpdc.utah.edu/2026/program.html",
+        "url": "https://hpdc.sci.utah.edu/2026/program.html",
         "label": "HPDC26 官方程序"
       },
       {
@@ -1911,19 +1868,19 @@
         "label": "作者论文目录与接收说明"
       }
     ],
-    "problem": "GPU 高压缩率科学数据压缩。",
-    "method": "正式题名及作者说明确认利用全局数据分解/SVD 方向；正式摘要与正文尚未完成核验，不据第三方摘要扩展技术细节。",
-    "results": "定量结果尚未从第一方摘要或全文核验。",
-    "scenario": "GPU 科学数据压缩。",
+    "problem": "GPU 有损压缩器依赖分块空间分解来适配并行，无法捕获全局相关性，压缩比受限。",
+    "method": "TZ 采用全局 Tucker 分解，以自适应随机化 SVD 引擎降低计算成本；全局处理使量化与编码统一，消除块效应和分块元数据开销。",
+    "results": "摘要报告在生产规模科学数据集上，相同误差界下压缩比比先进 GPU 压缩器高约 10×，吞吐保持有竞争力；未给出具体吞吐数值。",
+    "scenario": "GPU 上的高压缩比科学数据压缩。",
     "tags": [
       "GPU",
       "科学数据",
-      "全局分解"
+      "误差有界",
+      "张量分解"
     ],
-    "evidence": "官方记录",
-    "status": "appendix",
-    "caveat": "题录与研究主题已确认；第一方方法和实验资料不足，列入附录。",
-    "selection": "主要检索范围"
+    "evidence": "摘要",
+    "status": "main",
+    "caveat": "摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取；各数据集的压缩比与吞吐待正文核验。"
   },
   {
     "id": "hpdc25-crossfield",
@@ -1942,15 +1899,14 @@
     "results": "两种应用、85 个字段的评估中，单字段压缩比最高提高 103.4%，整体数据压缩比最高提高 19.3%。",
     "scenario": "多变量科学模拟和跨物理量相关数据。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "跨字段",
       "科学数据",
       "误差有界"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc25-ipcomp",
@@ -1968,7 +1924,7 @@
         "label": "HPDC25 官方程序与 ACM 链接"
       },
       {
-        "url": "https://hpdc.utah.edu/2025/assets/slides/main_session/yang.pdf",
+        "url": "https://hpdc.sci.utah.edu/2025/assets/slides/main_session/yang.pdf",
         "label": "官方会议报告"
       },
       {
@@ -1988,8 +1944,7 @@
     ],
     "evidence": "摘要与官方报告",
     "status": "main",
-    "caveat": "早期预印本名为 PSZ；按正式题名 IPComp 统一，不重复计数。",
-    "selection": "主要检索范围"
+    "caveat": "早期预印本名为 PSZ；按正式题名 IPComp 统一，不重复计数。"
   },
   {
     "id": "hpdc25-safusion",
@@ -2016,15 +1971,14 @@
     "results": "官方报告比较 ResNet-152/ImageNet 与 BERT-large/SQuAD 等任务，显示降低整体训练耗时；压缩时间相对 OMGS/Cupcake 仅增加 4.5%–6.2%。未将图读数当成精确总体加速数字。",
     "scenario": "分布式 DNN 训练的梯度压缩与张量通信。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "梯度压缩",
       "通信压缩",
       "自适应"
     ],
     "evidence": "官方报告",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc24-dct",
@@ -2051,7 +2005,7 @@
     "results": "在 CS-2、SN30、Groq、IPU 等设备上的四类基准与三种 AI 科学应用中测试，达到设备相关的数十 GB/s 吞吐；所测应用准确率损失不超过 3%。",
     "scenario": "AI 加速器上的科学数据压缩和 AI 科学应用。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "硬件协同",
       "DCT",
       "可移植性",
@@ -2059,8 +2013,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "准确率指标和数值误差界并非同一概念；不能将该文的应用准确率保证等同于所有数据逐点误差有界。",
-    "selection": "主要检索范围"
+    "caveat": "准确率指标和数值误差界并非同一概念；不能将该文的应用准确率保证等同于所有数据逐点误差有界。"
   },
   {
     "id": "hpdc24-ceresz",
@@ -2072,10 +2025,6 @@
       {
         "url": "https://doi.org/10.1145/3625549.3658691",
         "label": "正式论文 / DOI"
-      },
-      {
-        "url": "https://hyfshishen.github.io/publications/HPDC24-paper.pdf",
-        "label": "作者公开全文"
       },
       {
         "url": "https://researchwith.stevens.edu/en/publications/ceresz-enabling-and-scaling-error-bounded-lossy-compression-on-ce/",
@@ -2094,8 +2043,7 @@
     ],
     "evidence": "全文",
     "status": "main",
-    "caveat": "CPU、GPU 与晶圆级设备间的比较同时包含硬件规模差异；摘要与正文个别吞吐下限有差异，使用正文平均值。",
-    "selection": "主要检索范围"
+    "caveat": "CPU、GPU 与晶圆级设备间的比较同时包含硬件规模差异；摘要与正文个别吞吐下限有差异，使用正文平均值。正式摘要给出的吞吐范围为 227.93–773.8 GB/s，相对已有 GPU 压缩器快 2.43–10.98 倍。作者公开全文的原链接已失效（2026-11-16 复查），正文平均值待依据正式论文再次复核。"
   },
   {
     "id": "hpdc23-fzgpu",
@@ -2129,8 +2077,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc22-tac",
@@ -2164,8 +2111,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc22-szx",
@@ -2192,8 +2138,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "以速度为主要目标，不能据此推断始终具有最优压缩比。",
-    "selection": "主要检索范围"
+    "caveat": "以速度为主要目标，不能据此推断始终具有最优压缩比。"
   },
   {
     "id": "hpdc21-arc",
@@ -2223,8 +2168,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc21-adaptive",
@@ -2255,8 +2199,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc20-szauto",
@@ -2286,8 +2229,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpdc19-deepsz",
@@ -2314,15 +2256,14 @@
     "results": "AlexNet/VGG-16 在 ImageNet 上分别压缩 46/116 倍，LeNet-300-100/LeNet-5 在 MNIST 上压缩 57/56 倍，推理准确率下降不超过 0.3%；相对比较方案压缩比最高提高 1.43 倍。",
     "scenario": "DNN 权重存储与传输；以数值误差有界编码为核心的模型数据压缩。",
     "tags": [
-      "AI/HPC",
+      "AI融合",
       "模型数据",
       "误差有界",
       "自适应"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "sys-sosp21-hipress",
@@ -2338,7 +2279,8 @@
       "通信压缩",
       "GPU",
       "流水线",
-      "AI融合"
+      "AI融合",
+      "梯度压缩"
     ],
     "sources": [
       {
@@ -2356,8 +2298,7 @@
     ],
     "caveat": "以正式论文PDF为核验依据；请与NSDI 2024的THC工作区分。",
     "evidence": "摘要",
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sys-osdi25-decdec",
@@ -2371,7 +2312,7 @@
     "scenario": "资源受限设备的低比特LLM推理。",
     "tags": [
       "量化",
-      "精度与性能权衡",
+      "性能权衡",
       "自适应",
       "AI融合"
     ],
@@ -2387,15 +2328,14 @@
     ],
     "caveat": "以模型量化误差与压缩运行设计为核心，作为AI交叉方向收录；不是科学数据逐点误差有界压缩，且需要额外CPU残差存储。",
     "evidence": "摘要",
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sys-osdi24-sabre",
     "title": "Sabre: Hardware-Accelerated Snapshot Compression for Serverless MicroVMs",
     "venue": "OSDI",
     "year": 2024,
-    "url": "https://www.usenix.org/conference/osdi24/technical-sessions",
+    "url": "https://www.usenix.org/conference/osdi24/presentation/lazarev",
     "sources": [
       {
         "url": "https://www.usenix.org/conference/osdi24/technical-sessions",
@@ -2414,8 +2354,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "已读官方完整摘要，未对每个实验图表进行独立复核。",
-    "selection": "主要检索范围"
+    "caveat": "已读官方完整摘要，未对每个实验图表进行独立复核。"
   },
   {
     "id": "sys-osdi24-muslope",
@@ -2444,8 +2383,7 @@
     ],
     "caveat": "倍数对应论文评测集合，不代表全部日志均达到最大压缩比。",
     "evidence": "摘要",
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sys-osdi21-clp",
@@ -2474,33 +2412,37 @@
     ],
     "caveat": "13× 指摄入性能，非压缩比；读取摘要与正文存储格式章节。",
     "evidence": "摘要",
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sys-eurosys26-rolling",
     "title": "Once Rolling Hashing is Enough: Exploiting Rolling Hash Reuse in Delta Compression",
     "venue": "EuroSys",
     "year": 2026,
-    "url": "https://2026.eurosys.org/papers.html",
-    "problem": "差分压缩中的滚动哈希计算重复开销。",
-    "method": "正式题目明确研究差分压缩中的滚动哈希复用；尚未读取可靠摘要/正文来确认具体算法。",
-    "results": "未核验实验结果。",
-    "scenario": "差分压缩与相似块搜索。",
+    "url": "https://doi.org/10.1145/3767295.3803596",
+    "problem": "备份存储中差分压缩的数据削减率高于块级去重，但计算开销大，会使备份吞吐下降 50%–70%。",
+    "method": "FastDelta 指出差分压缩多个阶段重复进行逐字节滚动哈希计算；通过采样缓存并复用滚动哈希，配合嵌入式采样和局部性感知的容器压缩，降低采样带来的性能开销与削减率损失。",
+    "results": "摘要报告端到端吞吐提高 1.3–2.1×，数据削减率与所比较方案相当，内存开销较低。",
+    "scenario": "备份存储中的去重后差分压缩。",
     "tags": [
       "差分压缩",
+      "去重",
+      "存储压缩",
       "压缩加速"
     ],
     "sources": [
+      {
+        "url": "https://doi.org/10.1145/3767295.3803596",
+        "label": "正式论文 / DOI"
+      },
       {
         "url": "https://2026.eurosys.org/papers.html",
         "label": "EuroSys 2026 官方论文清单"
       }
     ],
-    "caveat": "仅正式会议题目确认，待核验方法与结果。",
-    "evidence": "官方记录",
-    "status": "appendix",
-    "selection": "主要检索范围"
+    "caveat": "摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取；未逐表核验数据集与基线。",
+    "evidence": "摘要",
+    "status": "main"
   },
   {
     "id": "sys-eurosys26-ibp",
@@ -2534,8 +2476,7 @@
     ],
     "caveat": "此处采用正式会议版25%；后续extended版摘要写24%，不能混用版本。",
     "evidence": "摘要",
-    "status": "main",
-    "selection": "主要检索范围"
+    "status": "main"
   },
   {
     "id": "sys-eurosys25-deltazip",
@@ -2565,8 +2506,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "已核验正式 PDF 首页、摘要与 DOI；此处的 10× 指差分压缩，不能直接视为含基座的总存储压缩比。",
-    "selection": "主要检索范围"
+    "caveat": "已核验正式 PDF 首页、摘要与 DOI；此处的 10× 指差分压缩，不能直接视为含基座的总存储压缩比。"
   },
   {
     "id": "sys-eurosys24-insitu",
@@ -2594,13 +2534,12 @@
     "scenario": "HPC 原位压缩、计算与 I/O 调度。",
     "tags": [
       "I/O与检查点",
-      "科学数据压缩",
-      "原位处理"
+      "科学数据",
+      "原位"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "正式会议题目由官方录用页核验，方法和结果来自作者公开artifact；倍数是I/O开销改善，不是全应用统一加速。",
-    "selection": "主要检索范围"
+    "caveat": "正式会议题目由官方录用页核验，方法和结果来自作者公开artifact；倍数是I/O开销改善，不是全应用统一加速。"
   },
   {
     "id": "sys-fast26-polarstore",
@@ -2632,8 +2571,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "来自正式部署型论文摘要；成本节省同时受到系统设计和部署条件影响，不能简单由压缩比推导。",
-    "selection": "主要检索范围"
+    "caveat": "来自正式部署型论文摘要；成本节省同时受到系统设计和部署条件影响，不能简单由压缩比推导。"
   },
   {
     "id": "sys-fast25-hasis",
@@ -2658,15 +2596,14 @@
     ],
     "evidence": "摘要",
     "status": "appendix",
-    "caveat": "压缩是关键硬件前提，但主要创新偏向 HTAP 索引设计；按严格压缩核心边界单列。",
-    "selection": "主要检索范围"
+    "caveat": "压缩是关键硬件前提，但主要创新偏向 HTAP 索引设计；按严格压缩核心边界单列。"
   },
   {
     "id": "sys-fast22-btree",
     "title": "Closing the B+-tree vs. LSM-tree Write Amplification Gap on Modern Storage Hardware with Built-in Transparent Compression",
     "venue": "FAST",
     "year": 2022,
-    "url": "https://www.usenix.org/conference/fast22/technical-sessions",
+    "url": "https://www.usenix.org/conference/fast22/presentation/qiao",
     "sources": [
       {
         "url": "https://www.usenix.org/conference/fast22/technical-sessions",
@@ -2684,8 +2621,7 @@
     ],
     "evidence": "摘要",
     "status": "appendix",
-    "caveat": "数据压缩是设计使能条件，但主要贡献为索引与写放大优化；严格筛选时列边缘，10× 也不是压缩比。",
-    "selection": "主要检索范围"
+    "caveat": "数据压缩是设计使能条件，但主要贡献为索引与写放大优化；严格筛选时列边缘，10× 也不是压缩比。"
   },
   {
     "id": "sys-fast22-deepsketch",
@@ -2714,15 +2650,14 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "依据官方摘要；这里是相对数据削减率改善，不是整体压缩比增加 33 倍。",
-    "selection": "主要检索范围"
+    "caveat": "依据官方摘要；这里是相对数据削减率改善，不是整体压缩比增加 33 倍。"
   },
   {
     "id": "sys-fast22-tvstore",
     "title": "TVStore: Automatically Bounding Time Series Storage via Time-Varying Compression",
     "venue": "FAST",
     "year": 2022,
-    "url": "https://www.usenix.org/conference/fast22/technical-sessions",
+    "url": "https://www.usenix.org/conference/fast22/presentation/an",
     "sources": [
       {
         "url": "https://www.usenix.org/conference/fast22/technical-sessions",
@@ -2741,8 +2676,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "误差配置和具体性能曲线未逐图复核；不能把容量保证等同于任意固定误差界。",
-    "selection": "主要检索范围"
+    "caveat": "误差配置和具体性能曲线未逐图复核；不能把容量保证等同于任意固定误差界。"
   },
   {
     "id": "sys-fast21-logreducer",
@@ -2771,8 +2705,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "数量来自官方摘要；精确逐数据集压缩比需参阅正文实验。",
-    "selection": "主要检索范围"
+    "caveat": "数量来自官方摘要；精确逐数据集压缩比需参阅正文实验。"
   },
   {
     "id": "sys-fast21-fpc",
@@ -2788,7 +2721,7 @@
     ],
     "problem": "移动应用对写为主文件和只读文件的随机访问造成闪存写压力；压缩需要避免损害用户感知延迟。",
     "method": "FPC 采用文件访问模式指导的双模式压缩：前台压缩面向写为主文件减少写入，后台压缩将随机读取的数据块打包以改善读取。",
-    "results": "已获得的官方摘要确认优化目标与设计，但未包含可准确转录的定量结果，故不列倍数。",
+    "results": "官方摘要：FPC 使总写入量和可执行文件大小平均分别减少 26.1% 和 23.7%，应用启动时间最多改善 14.8%。",
     "scenario": "移动设备日志结构文件系统，随机写入、碎片化读取与闪存寿命。",
     "tags": [
       "文件系统压缩",
@@ -2797,8 +2730,7 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "实验数值未核验；收录依据是明确的核心文件压缩设计。",
-    "selection": "主要检索范围"
+    "caveat": "数值来自 USENIX 官方摘要；实验设备与基线细节未逐图复核。"
   },
   {
     "id": "sys-atc25-logcrisp",
@@ -2824,15 +2756,14 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "结果范围为论文评测集合；不同查询不应视为统一固定加速比。",
-    "selection": "主要检索范围"
+    "caveat": "结果范围为论文评测集合；不同查询不应视为统一固定加速比。"
   },
   {
     "id": "sys-nsdi26-zipllm",
     "title": "ZipLLM: Efficient LLM Storage via Model-Aware Synergistic Data Deduplication and Compression",
     "venue": "NSDI",
     "year": 2026,
-    "url": "https://www.usenix.org/conference/nsdi26/technical-sessions",
+    "url": "https://www.usenix.org/conference/nsdi26/presentation/wang-zirui",
     "sources": [
       {
         "url": "https://www.usenix.org/conference/nsdi26/technical-sessions",
@@ -2855,15 +2786,14 @@
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "无损压缩保留模型权重；54% 是存储节省而非推理加速。",
-    "selection": "主要检索范围"
+    "caveat": "无损压缩保留模型权重；54% 是存储节省而非推理加速。"
   },
   {
     "id": "sys-nsdi24-thc",
     "title": "THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression",
     "venue": "NSDI",
     "year": 2024,
-    "url": "https://www.usenix.org/conference/nsdi24/technical-sessions",
+    "url": "https://www.usenix.org/conference/nsdi24/presentation/li-minghao",
     "sources": [
       {
         "url": "https://www.usenix.org/conference/nsdi24/technical-sessions",
@@ -2878,12 +2808,12 @@
       "通信压缩",
       "压缩域计算",
       "AI融合",
-      "网络内计算"
+      "网络内计算",
+      "梯度压缩"
     ],
     "evidence": "摘要",
     "status": "main",
-    "caveat": "结果是到目标精度的训练加速，不是单纯传输吞吐或压缩比。",
-    "selection": "主要检索范围"
+    "caveat": "结果是到目标精度的训练加速，不是单纯传输吞吐或压缩比。"
   },
   {
     "id": "isca26-icepack",
@@ -2908,8 +2838,7 @@
     ],
     "evidence": "IEEE正式摘要",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca26-shannon",
@@ -2934,8 +2863,7 @@
     ],
     "evidence": "作者摘要＋正式DOI记录",
     "status": "main",
-    "caveat": "无损是相对于输入权重格式；不把“理论可达10×”写成实际统一压缩比。",
-    "selection": "主要检索范围"
+    "caveat": "无损是相对于输入权重格式；不把“理论可达10×”写成实际统一压缩比。"
   },
   {
     "id": "isca26-enec",
@@ -2960,8 +2888,7 @@
     ],
     "evidence": "作者摘要＋正式DOI记录",
     "status": "main",
-    "caveat": "跨GPU/NPU吞吐对比受平台影响；这里保留作者摘要的对比口径。",
-    "selection": "主要检索范围"
+    "caveat": "跨GPU/NPU吞吐对比受平台影响；这里保留作者摘要的对比口径。"
   },
   {
     "id": "isca26-rst",
@@ -2986,8 +2913,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca25-ecco",
@@ -3013,8 +2939,7 @@
     ],
     "evidence": "作者摘要＋机构正式书目",
     "status": "main",
-    "caveat": "加速与容量属于特定模型和硬件设置，不是通用无损压缩保证。",
-    "selection": "主要检索范围"
+    "caveat": "加速与容量属于特定模型和硬件设置，不是通用无损压缩保证。"
   },
   {
     "id": "isca25-xor",
@@ -3039,8 +2964,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca24-dylect",
@@ -3065,8 +2989,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca23-cdpu",
@@ -3091,8 +3014,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca23-bonsai",
@@ -3117,8 +3039,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "通过检测与全精度重算保持基线算法结果，不能把低精度表示直接理解为允许最终错误。",
-    "selection": "主要检索范围"
+    "caveat": "通过检测与全精度重算保持基线算法结果，不能把低精度表示直接理解为允许最终错误。"
   },
   {
     "id": "isca21-spzip",
@@ -3143,8 +3064,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "isca20-buddy",
@@ -3169,8 +3089,7 @@
     ],
     "evidence": "公开正文摘要",
     "status": "main",
-    "caveat": "容量收益和性能取决于数据可压缩性与 GPU 间互连带宽；慢互连可能显著拖累性能。",
-    "selection": "主要检索范围"
+    "caveat": "容量收益和性能取决于数据可压缩性与 GPU 间互连带宽；慢互连可能显著拖累性能。"
   },
   {
     "id": "isca20-ibm",
@@ -3196,8 +3115,7 @@
     ],
     "evidence": "IBM 官方摘要",
     "status": "main",
-    "caveat": "388× 为压缩内核对单核软件比较，280 GB/s 为最大整系统配置，均非单应用端到端加速。属于正式 industrial product 论文。",
-    "selection": "主要检索范围"
+    "caveat": "388× 为压缩内核对单核软件比较，280 GB/s 为最大整系统配置，均非单应用端到端加速。属于正式 industrial product 论文。"
   },
   {
     "id": "hpca26-oscar",
@@ -3213,29 +3131,33 @@
     ],
     "problem": "梯度压缩与集合通信执行顺序难以兼容，编解码成本可能抵消通信节省。",
     "method": "Oscar 软件方案按梯度特征拆分并以 count-sketch 等方式配合集合通信；硬件方案结合定点梯度拆分与自适应熵编码，更新概率表。",
-    "results": "IEEE 正式摘要确认开展分布式训练评价；当前可读取摘要片段未给出完整可核验的性能数字。",
+    "results": "正式摘要：Oscar-SW 相对 CountSketch 加速 1.22×、精度高 7%；Oscar-HW 的 AllReduce 平均加速 3.77×，端到端训练平均加速 1.38×；ASC 编码的 AllReduce 相对 Atalanta 平均为 1.05×，相对不压缩为 4.66×。",
     "scenario": "分布式深度学习梯度通信、AllReduce。",
     "tags": [
       "通信压缩",
       "AI融合",
       "硬件协同",
-      "自适应"
+      "自适应",
+      "梯度压缩"
     ],
     "evidence": "IEEE 正式摘要",
     "status": "main",
-    "caveat": "全文实验与精度条件仍待补核，未填未经确认的加速比。",
-    "selection": "主要检索范围"
+    "caveat": "数值取自正式摘要；各项对应的模型、网络与精度条件待全文补核。"
   },
   {
     "id": "hpca26-kagura",
     "title": "Intermittence-Aware Cache Compression",
     "venue": "HPCA",
     "year": 2026,
-    "url": "https://2026.hpca-conf.org/details/hpca-2026-main-conference/23/Intermittence-Aware-Cache-Compression",
+    "url": "https://doi.org/10.1109/HPCA68181.2026.11408535",
     "sources": [
       {
         "url": "https://gfang99.github.io/papers/Kagura_HPCA26.pdf",
         "label": "公开正文与会议官方议程"
+      },
+      {
+        "url": "https://2026.hpca-conf.org/details/hpca-2026-main-conference/23/Intermittence-Aware-Cache-Compression",
+        "label": "HPCA 2026 官方议程"
       }
     ],
     "problem": "能量采集设备频繁掉电，数据可能在再次复用前丢失；普通压缩会产生无收益的能耗和延迟。",
@@ -3250,8 +3172,7 @@
     ],
     "evidence": "公开正文与会议官方议程",
     "status": "main",
-    "caveat": "百分比对应论文特定间歇供电配置，不适用于普通持续供电服务器。",
-    "selection": "主要检索范围"
+    "caveat": "百分比对应论文特定间歇供电配置，不适用于普通持续供电服务器。"
   },
   {
     "id": "hpca26-sage",
@@ -3277,8 +3198,7 @@
     ],
     "evidence": "公开正文与机构正式会议记录",
     "status": "main",
-    "caveat": "范围跨不同分析器和基线，并非单一通用加速比。",
-    "selection": "主要检索范围"
+    "caveat": "范围跨不同分析器和基线，并非单一通用加速比。"
   },
   {
     "id": "hpca25-ariadne",
@@ -3304,8 +3224,7 @@
     ],
     "evidence": "公开论文摘要",
     "status": "main",
-    "caveat": "此为 HPCA 2025 Ariadne；不要与 HPCA 2026 的同名 UVM 工作混淆。",
-    "selection": "主要检索范围"
+    "caveat": "此为 HPCA 2025 Ariadne；不要与 HPCA 2026 的同名 UVM 工作混淆。"
   },
   {
     "id": "hpca25-cczns",
@@ -3331,8 +3250,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "原型采用 FEMU 等仿真平台并引入硬件压缩器性能；不应解读为全部结果来自量产 SSD。",
-    "selection": "主要检索范围"
+    "caveat": "原型采用 FEMU 等仿真平台并引入硬件压缩器性能；不应解读为全部结果来自量产 SSD。"
   },
   {
     "id": "hpca24-enterprise",
@@ -3358,8 +3276,7 @@
     ],
     "evidence": "IBM 官方摘要",
     "status": "main",
-    "caveat": "正文实验表尚待核验。",
-    "selection": "主要检索范围"
+    "caveat": "正文实验表尚待核验。"
   },
   {
     "id": "hpca24-smartdimm",
@@ -3384,8 +3301,7 @@
     ],
     "evidence": "公开正文",
     "status": "appendix",
-    "caveat": "压缩是两个主要实证场景之一，论文总主题是通用上层协议卸载；严格压缩主题口径下列为边缘，汇总数字不能全部归因于压缩。",
-    "selection": "主要检索范围"
+    "caveat": "压缩是两个主要实证场景之一，论文总主题是通用上层协议卸载；严格压缩主题口径下列为边缘，汇总数字不能全部归因于压缩。"
   },
   {
     "id": "hpca23-baryon",
@@ -3410,8 +3326,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "hpca23-hybridllc",
@@ -3437,8 +3352,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "寿命改善是模型估计；不同结果对应不同配置与基线。",
-    "selection": "主要检索范围"
+    "caveat": "寿命改善是模型估计；不同结果对应不同配置与基线。"
   },
   {
     "id": "hpca22-gbdi",
@@ -3463,8 +3377,7 @@
     ],
     "evidence": "机构正式记录与摘要",
     "status": "main",
-    "caveat": "结果限定于论文所选带宽压力负载。",
-    "selection": "主要检索范围"
+    "caveat": "结果限定于论文所选带宽压力负载。"
   },
   {
     "id": "hpca19-ptmc",
@@ -3490,8 +3403,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "主要目标是带宽效率；最高加速不代表所有应用的平均收益。",
-    "selection": "主要检索范围"
+    "caveat": "主要目标是带宽效率；最高加速不代表所有应用的平均收益。"
   },
   {
     "id": "micro26-armor",
@@ -3515,8 +3427,7 @@
     ],
     "evidence": "官方议程与作者摘要",
     "status": "appendix",
-    "caveat": "属于计算图/代码压缩及位并行，是否纳入 data compression 范畴存在口径边界，列边缘。",
-    "selection": "主要检索范围"
+    "caveat": "属于计算图/代码压缩及位并行，是否纳入 data compression 范畴存在口径边界，列边缘。"
   },
   {
     "id": "micro26-gossamer",
@@ -3540,8 +3451,7 @@
     ],
     "evidence": "官方议程",
     "status": "appendix",
-    "caveat": "已确认正式会议题目，但方法可能属于 token 淘汰或量化；压缩核心性与实验仍待核验。",
-    "selection": "主要检索范围"
+    "caveat": "已确认正式会议题目，但方法可能属于 token 淘汰或量化；压缩核心性与实验仍待核验。"
   },
   {
     "id": "micro26-cxl",
@@ -3568,8 +3478,7 @@
     ],
     "evidence": "会议官方议程与公开正文",
     "status": "main",
-    "caveat": "截止日会议已举行；未检出稳定 DOI，使用官方议程与作者全文。较慢算法可能因减少内存传输而降低总延迟，不能仅比较解码内核。",
-    "selection": "主要检索范围"
+    "caveat": "截止日会议已举行；未检出稳定 DOI，使用官方议程与作者全文。较慢算法可能因减少内存传输而降低总延迟，不能仅比较解码内核。"
   },
   {
     "id": "micro25-latpc",
@@ -3593,8 +3502,7 @@
     ],
     "evidence": "机构正式摘要",
     "status": "appendix",
-    "caveat": "压缩对象是地址翻译请求元数据，主要贡献是翻译/预取；依严格应用数据压缩口径列边缘。",
-    "selection": "主要检索范围"
+    "caveat": "压缩对象是地址翻译请求元数据，主要贡献是翻译/预取；依严格应用数据压缩口径列边缘。"
   },
   {
     "id": "micro25-llm265",
@@ -3620,8 +3528,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "无逐点误差界；结果依赖模型任务质量目标。早期预印本名称 VcLLM，不应以 2024 年作为正式会议年份。",
-    "selection": "主要检索范围"
+    "caveat": "无逐点误差界；结果依赖模型任务质量目标。早期预印本名称 VcLLM，不应以 2024 年作为正式会议年份。"
   },
   {
     "id": "micro25-netzip",
@@ -3648,8 +3555,7 @@
     ],
     "evidence": "作者机构官方摘要",
     "status": "main",
-    "caveat": "百分点与压缩倍数含义不同；端到端收益取决于通信瓶颈。",
-    "selection": "主要检索范围"
+    "caveat": "百分点与压缩倍数含义不同；端到端收益取决于通信瓶颈。"
   },
   {
     "id": "micro24-allocation",
@@ -3674,8 +3580,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "数字反映论文共置实验的性能波动，不是统一加速比。",
-    "selection": "主要检索范围"
+    "caveat": "数字反映论文共置实验的性能波动，不是统一加速比。"
   },
   {
     "id": "micro22-pointcloud",
@@ -3701,8 +3606,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "画质与压缩率基本保持论文指定条件；43.7×与34×属于不同实验配置。",
-    "selection": "主要检索范围"
+    "caveat": "画质与压缩率基本保持论文指定条件；43.7×与34×属于不同实验配置。"
   },
   {
     "id": "micro22-tmcc",
@@ -3728,8 +3632,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "性能和容量数字是不同折中点，不能视为同时获得。",
-    "selection": "主要检索范围"
+    "caveat": "性能和容量数字是不同折中点，不能视为同时获得。"
   },
   {
     "id": "micro19-smash",
@@ -3755,8 +3658,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "纳入理由是论文直接提出新的稀疏压缩表示与解码/索引机制，并非仅使用现有 CSR。",
-    "selection": "主要检索范围"
+    "caveat": "纳入理由是论文直接提出新的稀疏压缩表示与解码/索引机制，并非仅使用现有 CSR。"
   },
   {
     "id": "micro19-touche",
@@ -3781,8 +3683,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "asplos26-zipserv",
@@ -3808,8 +3709,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "asplos25-float",
@@ -3836,8 +3736,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "最高吞吐与最高压缩率来自不同算法取向/数据，不是所有数据均可达到。",
-    "selection": "主要检索范围"
+    "caveat": "最高吞吐与最高压缩率来自不同算法取向/数据，不是所有数据均可达到。"
   },
   {
     "id": "asplos24-atalanta",
@@ -3863,8 +3762,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "无损是相对于输入的量化张量，不等于量化本身无损。",
-    "selection": "主要检索范围"
+    "caveat": "无损是相对于输入的量化张量，不等于量化本身无损。"
   },
   {
     "id": "asplos24-beezip",
@@ -3890,8 +3788,7 @@
     ],
     "evidence": "会议官方摘要",
     "status": "main",
-    "caveat": "吞吐与压缩比成对报告，最高值不能任意组合。",
-    "selection": "主要检索范围"
+    "caveat": "吞吐与压缩比成对报告，最高值不能任意组合。"
   },
   {
     "id": "asplos24-codecrunch",
@@ -3915,8 +3812,7 @@
     ],
     "evidence": "官方摘要",
     "status": "appendix",
-    "caveat": "其核心贡献是否属于数据压缩，以及压缩本身的独立收益，仍待全文核验。",
-    "selection": "主要检索范围"
+    "caveat": "其核心贡献是否属于数据压缩，以及压缩本身的独立收益，仍待全文核验。"
   },
   {
     "id": "asplos24-palantir",
@@ -3942,8 +3838,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "整体数据缩减含去重收益，不能全部归于差分压缩。",
-    "selection": "主要检索范围"
+    "caveat": "整体数据缩减含去重收益，不能全部归于差分压缩。"
   },
   {
     "id": "asplos23-optimus",
@@ -3969,8 +3864,7 @@
     ],
     "evidence": "公开正文表 2",
     "status": "main",
-    "caveat": "44.91% 是速度提高，不能写成时间减少 44.91%；对应轻微困惑度变化。",
-    "selection": "主要检索范围"
+    "caveat": "44.91% 是速度提高，不能写成时间减少 44.91%；对应轻微困惑度变化。"
   },
   {
     "id": "asplos21-bcd",
@@ -3996,8 +3890,7 @@
     ],
     "evidence": "机构正式摘要及会议扩展摘要",
     "status": "main",
-    "caveat": "扩展摘要有不同子集统计；此处统一采用正式摘要的 1.94×/48.4% 数字。",
-    "selection": "主要检索范围"
+    "caveat": "扩展摘要有不同子集统计；此处统一采用正式摘要的 1.94×/48.4% 数字。"
   },
   {
     "id": "asplos20-safecracker",
@@ -4022,8 +3915,7 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "核心主题是压缩缓存的安全性质，非新压缩器；数字来自模拟与特定概念验证程序。",
-    "selection": "主要检索范围"
+    "caveat": "核心主题是压缩缓存的安全性质，非新压缩器；数字来自模拟与特定概念验证程序。"
   },
   {
     "id": "asplos20-thesaurus",
@@ -4048,8 +3940,7 @@
     ],
     "evidence": "公开正文（摘要与关键章节）",
     "status": "main",
-    "caveat": "",
-    "selection": "主要检索范围"
+    "caveat": ""
   },
   {
     "id": "asplos19-sdfm",
@@ -4075,19 +3966,22 @@
     ],
     "evidence": "公开正文",
     "status": "main",
-    "caveat": "67% 是远内存层的每容量成本收益，不是整台服务器或整个数据中心总成本下降。",
-    "selection": "主要检索范围"
+    "caveat": "67% 是远内存层的每容量成本收益，不是整台服务器或整个数据中心总成本下降。"
   },
   {
     "id": "sigcomm26-kvcodec",
     "title": "Efficient Remote KV Cache Reuse with GPU-native Video Codec",
     "venue": "SIGCOMM",
     "year": 2026,
-    "url": "https://conferences.sigcomm.org/sigcomm/2026/program/papers/",
+    "url": "https://doi.org/10.1145/3789240.3829120",
     "sources": [
       {
         "url": "https://conferences.sigcomm.org/sigcomm/2026/program/papers/",
         "label": "SIGCOMM26 官方摘要"
+      },
+      {
+        "url": "https://arxiv.org/abs/2602.09725",
+        "label": "作者公开预印本"
       }
     ],
     "problem": "远程KV缓存压缩减少网络传输，但重解码开销抵消收益。",
@@ -4098,19 +3992,20 @@
       "AI融合",
       "GPU",
       "通信压缩",
-      "硬件协同"
+      "硬件协同",
+      "KV缓存"
     ],
     "evidence": "官方摘要",
     "status": "main",
-    "caveat": "正式主会日程与摘要已核验；未逐表核验模型和误差设置。",
-    "selection": "主要检索范围"
+    "caveat": "正式论文 DOI、主会日程与摘要已核验；未逐表核验模型和误差设置。",
+    "select_reason": "定向补充：复用 GPU 原生视频编解码器压缩 KV 缓存，连接硬件复用与通信压缩两条路线。"
   },
   {
     "id": "sigcomm26-kvserve",
     "title": "KVServe: Service-Aware KV Cache Compression for Communication-Efficient Disaggregated LLM Serving",
     "venue": "SIGCOMM",
     "year": 2026,
-    "url": "https://conferences.sigcomm.org/sigcomm/2026/program/papers/",
+    "url": "https://doi.org/10.1145/3789240.3829139",
     "problem": "静态KV压缩配置不能适应工作负载、带宽和质量/SLO预算变化，可能反而增加延迟。",
     "method": "模块化压缩策略空间；贝叶斯离线剖析形成三维Pareto候选集；在线控制器结合延迟模型和bandit选择配置，并校正离线与在线差异。",
     "results": "官方摘要：离线搜索开销降低50×；集成vLLM后，PD分离服务JCT最高加速9.13×，KV分离服务TTFT最高改善32.8×。",
@@ -4118,18 +4013,23 @@
     "tags": [
       "AI融合",
       "通信压缩",
-      "自适应"
+      "自适应",
+      "KV缓存"
     ],
     "evidence": "官方摘要",
-    "caveat": "尚未逐表核验数值及各场景基线。",
+    "caveat": "正式论文 DOI 与摘要已核验；尚未逐表核验数值及各场景基线。",
     "sources": [
       {
         "url": "https://conferences.sigcomm.org/sigcomm/2026/program/papers/",
-        "label": "官方论文页 / 核验来源"
+        "label": "SIGCOMM26 官方论文清单"
+      },
+      {
+        "url": "https://arxiv.org/abs/2605.13734",
+        "label": "作者公开预印本"
       }
     ],
     "status": "main",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：把 KV 压缩配置做成随负载、带宽和 SLO 变化的在线决策，是自适应压缩在 LLM 服务中的延伸。"
   },
   {
     "id": "sigcomm25-hack",
@@ -4144,7 +4044,8 @@
     "tags": [
       "AI融合",
       "压缩域计算",
-      "通信压缩"
+      "通信压缩",
+      "KV缓存"
     ],
     "evidence": "全文节选",
     "caveat": "正式SIGCOMM2025版本为3页短文，会议类别与文章形式明确区分；数值来自该短文。",
@@ -4159,8 +4060,7 @@
       }
     ],
     "status": "main",
-    "select_reason": "扩展精选：压缩域矩阵计算直接缓解KV反量化瓶颈，展示通信压缩与计算融合方向；虽为短文，核心贡献明确且有正式DOI。",
-    "selection": "专题补充"
+    "select_reason": "扩展精选：压缩域矩阵计算直接缓解KV反量化瓶颈，展示通信压缩与计算融合方向；虽为短文，核心贡献明确且有正式DOI。"
   },
   {
     "id": "sigcomm24-cachegen",
@@ -4175,7 +4075,8 @@
     "tags": [
       "AI融合",
       "通信压缩",
-      "自适应"
+      "自适应",
+      "KV缓存"
     ],
     "evidence": "全文节选",
     "caveat": "数值为论文所测模型与数据集，不等于任意模型生成吞吐。",
@@ -4190,7 +4091,7 @@
       }
     ],
     "status": "main",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：面向 LLM 服务的 KV 缓存压缩与流式传输的代表性工作，是本清单 KV 压缩路线的起点。"
   },
   {
     "id": "dac25-birdmoe",
@@ -4221,7 +4122,7 @@
     "evidence": "会议官方摘要",
     "status": "main",
     "caveat": "无偏/保持期望不等同于逐值无损；未获得全文以逐项展开各模型精度指标。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：MoE 训练 All-to-All 通信的量化压缩，补充大模型训练通信压缩方向。"
   },
   {
     "id": "dac25-memsens",
@@ -4255,7 +4156,7 @@
       }
     ],
     "status": "main",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：把误差有界有损压缩用于伴随灵敏度分析的内存缩减，与 DAC 2024 MASC 的无损方案相对照。"
   },
   {
     "id": "dac25-pactrain",
@@ -4270,7 +4171,8 @@
     "tags": [
       "AI融合",
       "通信压缩",
-      "自适应"
+      "自适应",
+      "梯度压缩"
     ],
     "evidence": "作者摘要",
     "caveat": "正式DAC2025及DOI由DBLP和作者录用记录核对；IEEE页面未直接读到。",
@@ -4289,7 +4191,7 @@
       }
     ],
     "status": "main",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：让稀疏梯度压缩与 AllReduce 集合通信兼容，对应通信压缩与集合算法共同设计的趋势。"
   },
   {
     "id": "dac24-balloon",
@@ -4316,7 +4218,7 @@
     "evidence": "会议官方摘要",
     "status": "main",
     "caveat": "超过80%是压缩收益实现比例，不是数据体积减少80%；吞吐范围包含7%退化。未获取原文完整实验表。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：ZNS SSD 内置压缩的代表设计，也是 HPCA 2025 CCZNS 的直接比较对象。"
   },
   {
     "id": "dac24-elasticzram",
@@ -4346,7 +4248,7 @@
     "evidence": "会议官方摘要",
     "status": "main",
     "caveat": "尚未取得全文确认具体策略与每项成本；纳入理由是压缩交换层的资源管理构成主要主题。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：移动设备压缩交换（ZRAM）的资源管理，与 HPCA 2025 Ariadne 同属移动端内存压缩。"
   },
   {
     "id": "dac24-masc",
@@ -4378,7 +4280,7 @@
     "evidence": "公开正文",
     "status": "main",
     "caveat": "MASC 是无损工作；不要与 DAC 2025 误差有界有损的 MemSens 混淆。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：面向电路伴随灵敏度分析的无损时空预测压缩，属于嵌入应用内部的科学数据压缩。"
   },
   {
     "id": "dac23-pac",
@@ -4409,7 +4311,7 @@
     "evidence": "公开正文与官方摘要",
     "status": "main",
     "caveat": "官方报告摘要写压缩比提升 5%，作者公开论文写 3%；此处明确采用论文版本，不把两个数混用。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：神经自回归无损压缩的效率优化，补充学习式通用压缩方向。"
   },
   {
     "id": "dac22-metazip",
@@ -4436,7 +4338,7 @@
     "evidence": "ACM 正式摘要",
     "status": "main",
     "caveat": "数字为压缩引擎吞吐比较，未展开完整压缩比表；不能直接外推应用端到端速度。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：DEFLATE 的 FPGA 高吞吐加速器，补充数据中心无损压缩硬件方向。"
   },
   {
     "id": "pact20-cusz",
@@ -4461,14 +4363,12 @@
     "tags": [
       "GPU",
       "误差有界",
-      "科学数据",
-      "精选扩展"
+      "科学数据"
     ],
     "evidence": "摘要",
     "status": "main",
     "caveat": "",
-    "select_reason": "GPU 误差有界科学压缩的代表性基础框架，与后续 cuSZ 系列、GPU 压缩集合通信的技术脉络直接关联。",
-    "selection": "专题补充"
+    "select_reason": "GPU 误差有界科学压缩的代表性基础框架，与后续 cuSZ 系列、GPU 压缩集合通信的技术脉络直接关联。"
   },
   {
     "id": "dcc21-ndzip",
@@ -4502,14 +4402,12 @@
       "CPU",
       "SIMD",
       "无损",
-      "科学数据",
-      "精选扩展"
+      "科学数据"
     ],
     "evidence": "摘要与正文片段",
     "status": "main",
     "caveat": "此项是 DCC2021 的 CPU ndzip，与 SC2021 ndzip-gpu 是不同论文。吞吐来自文中测试系统，不能直接与不同年代 GPU 的 GB/s 排名比较。",
-    "select_reason": "高吞吐无损科学浮点压缩的代表性 CPU 基础工作，直接连接 SC2021 ndzip-gpu，补全无损路线及 SIMD/线程并行的技术脉络。",
-    "selection": "专题补充"
+    "select_reason": "高吞吐无损科学浮点压缩的代表性 CPU 基础工作，直接连接 SC2021 ndzip-gpu，补全无损路线及 SIMD/线程并行的技术脉络。"
   },
   {
     "id": "sys-sec21-elise",
@@ -4535,7 +4433,7 @@
     "evidence": "摘要",
     "status": "main",
     "caveat": "补充安全系统 A 会；训练与运行成本未在本条数值中体现。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：安全系统会议上的学习式无损日志压缩，补充日志压缩路线。"
   },
   {
     "id": "sys-sec21-seal",
@@ -4566,7 +4464,7 @@
     "evidence": "摘要",
     "status": "main",
     "caveat": "这是补充的安全系统 A 会论文，非科学浮点压缩。",
-    "selection": "主要检索范围"
+    "select_reason": "定向补充：支持直接因果查询的日志图压缩，补充压缩域查询路线。"
   },
   {
     "id": "sys-memsys24-zipcache",
@@ -4601,8 +4499,7 @@
     "caveat": "作为DRAM/SSD分层缓存压缩的代表性工作收录。最高收益并非同一工作负载必然同时出现。",
     "evidence": "全文",
     "status": "main",
-    "select_reason": "将压缩作为混合缓存的核心设计，完整重构索引、访问粒度与设备卸载，直接支撑硬件协同与端到端压缩收益趋势。",
-    "selection": "专题补充"
+    "select_reason": "将压缩作为混合缓存的核心设计，完整重构索引、访问粒度与设备卸载，直接支撑硬件协同与端到端压缩收益趋势。"
   },
   {
     "id": "ipdps25-pfpl",
@@ -4636,14 +4533,13 @@
       "科学数据",
       "误差有界",
       "GPU",
-      "可移植",
+      "可移植性",
       "质量保证"
     ],
     "evidence": "全文＋官方日程＋开放实现",
     "status": "main",
     "caveat": "速度和压缩率均依赖所测硬件、误差类型及数据；误差界违规比较只对应论文测试的软件版本。ABS比较因维度/内存约束排除了EXAALT与HACC，不能解读为所有SDRBench输入或所有压缩器配置均胜出。",
-    "select_reason": "把严格数值正确性、CPU/GPU格式兼容与高速编解码结合，是判断未来压缩器质量和可部署性的重要参照。",
-    "selection": "专题补充"
+    "select_reason": "把严格数值正确性、CPU/GPU格式兼容与高速编解码结合，是判断未来压缩器质量和可部署性的重要参照。"
   },
   {
     "id": "ipdps23-sperr",
@@ -4662,7 +4558,7 @@
         "label": "NCAR正式发表记录与摘要"
       },
       {
-        "url": "https://vast.ucar.edu/pdfs/SPERR_IPDPS.pdf",
+        "url": "https://impact-section.ucar.edu/pdfs/SPERR_IPDPS.pdf",
         "label": "作者公开PDF（正文尚待核验）"
       },
       {
@@ -4676,8 +4572,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "已核验主会论文、DOI与第一方摘要；公开PDF的率失真曲线尚未逐图核验。",
-    "selection": "专题补充"
+    "caveat": "已核验主会论文、DOI与第一方摘要；公开PDF的率失真曲线尚未逐图核验。"
   },
   {
     "id": "ipdps21-huffman",
@@ -4712,8 +4607,7 @@
     "evidence": "全文＋官方日程",
     "status": "main",
     "caveat": "结果衡量Huffman编码，不是完整科学压缩器的端到端加速；论文明确聚焦编码而非解码。",
-    "select_reason": "核心贡献是可复用的GPU熵编码基础组件，补足仅关注顶会完整压缩器会遗漏的关键吞吐瓶颈研究。",
-    "selection": "专题补充"
+    "select_reason": "核心贡献是可复用的GPU熵编码基础组件，补足仅关注顶会完整压缩器会遗漏的关键吞吐瓶颈研究。"
   },
   {
     "id": "fpga24-compressedlut",
@@ -4757,8 +4651,7 @@
     "evidence": "公开正文摘要＋官方日程＋开放实现",
     "status": "main",
     "caveat": "无损指精确恢复输入查找表；函数本身原有离散化/近似误差仍存在。2.33×是单位slice吞吐，不是整系统吞吐。官方日程标记最佳论文候选，未据此宣称获奖。",
-    "select_reason": "说明数据压缩可直接转化为硬件面积与吞吐效率收益；有完整开放工具、明确硬件实验和官方最佳论文候选认可，作为硬件压缩方向的专题补充。",
-    "selection": "专题补充"
+    "select_reason": "说明数据压缩可直接转化为硬件面积与吞吐效率收益；有完整开放工具、明确硬件实验和官方最佳论文候选认可，作为硬件压缩方向的专题补充。"
   },
   {
     "id": "taco20-memsz",
@@ -4789,13 +4682,12 @@
       "科学数据",
       "有损",
       "硬件协同",
-      "质量权衡"
+      "性能权衡"
     ],
     "evidence": "正式全文",
     "status": "main",
     "caveat": "TACO 17(4) Article 40，2020年11月正式期刊论文；性能数字来自系统模拟与RTL综合，而非已量产CPU实测。最大收益来自允许大量数据强近似的应用，1.8%是所测应用输出误差，不是通用逐点误差界。各项最高值不一定同时出现。",
-    "select_reason": "将科学有损编码直接嵌入处理器内存层次，提供压缩率、访存节省、能耗与应用误差的联合评估，补充内存有损压缩这一重要硬件研究路线。",
-    "selection": "专题补充"
+    "select_reason": "将科学有损编码直接嵌入处理器内存层次，提供压缩率、访存节省、能耗与应用误差的联合评估，补充内存有损压缩这一重要硬件研究路线。"
   },
   {
     "id": "tbd23-sz3",
@@ -4824,8 +4716,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "2022-08-23在线发表；正式卷期IEEE Transactions on Big Data 9(2), 2023。本页按卷期年记2023。",
-    "selection": "专题补充"
+    "caveat": "2022-08-23在线发表；正式卷期IEEE Transactions on Big Data 9(2), 2023。本页按卷期年记2023。"
   },
   {
     "id": "tvcg20-tthresh",
@@ -4856,8 +4747,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "2019在线发表，2020正式卷期26(9):2891–2903。主要关注MSE/率失真；不可自动等同于逐点绝对误差界。",
-    "selection": "专题补充"
+    "caveat": "2019在线发表，2020正式卷期26(9):2891–2903。主要关注MSE/率失真；不可自动等同于逐点绝对误差界。"
   },
   {
     "id": "tc22-mgardplus",
@@ -4890,8 +4780,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "2021在线发表，IEEE Transactions on Computers 71(7), 2022正式卷期。",
-    "selection": "专题补充"
+    "caveat": "2021在线发表，IEEE Transactions on Computers 71(7), 2022正式卷期。"
   },
   {
     "id": "softx23-mgard",
@@ -4924,8 +4813,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "正式发表2023，arXiv上传2024；不应误记为2024新算法。该文是软件系统介绍，不与MGARD+当作同一篇重复计数。",
-    "selection": "专题补充"
+    "caveat": "正式发表2023，arXiv上传2024；不应误记为2024新算法。该文是软件系统介绍，不与MGARD+当作同一篇重复计数。"
   },
   {
     "id": "sigmod24-hpez",
@@ -4958,8 +4846,7 @@
     ],
     "evidence": "官方/作者摘要及正文节选",
     "status": "main",
-    "caveat": "正式载体PACMMOD 2(1), Article 4，SIGMOD2024论文；百分比为压缩比提升，不能误读为对应倍数。",
-    "selection": "专题补充"
+    "caveat": "正式载体PACMMOD 2(1), Article 4，SIGMOD2024论文；百分比为压缩比提升，不能误读为对应倍数。"
   },
   {
     "id": "vldb25-qpet",
@@ -4988,13 +4875,62 @@
     "tags": [
       "误差有界",
       "QoI",
-      "科学数据压缩",
+      "科学数据",
       "性能权衡"
     ],
     "evidence": "正式摘要 / artifact",
     "status": "main",
     "select_reason": "在数据库顶会发表、直接面向HPC科学数据压缩的重要跨领域工作，代表从原始数据误差转向派生量误差约束。",
-    "caveat": "使用正式PVLDB摘要数值；早期预印本摘要的数字不同，未混用。全文实验图表尚未逐项核验。",
-    "selection": "专题补充"
+    "caveat": "使用正式PVLDB摘要数值；早期预印本摘要的数字不同，未混用。全文实验图表尚未逐项核验。"
+  },
+  {
+    "id": "sys-eurosys23-loggrep",
+    "title": "LogGrep: Fast and Cheap Cloud Log Storage by Exploiting both Static and Runtime Patterns",
+    "venue": "EuroSys",
+    "year": 2023,
+    "url": "https://doi.org/10.1145/3552326.3567484",
+    "sources": [
+      {
+        "url": "https://doi.org/10.1145/3552326.3567484",
+        "label": "正式论文 / DOI"
+      }
+    ],
+    "problem": "近线日志主要用于调试，既要低查询延迟，又要降低存储、压缩和查询计算的总成本。",
+    "method": "先按静态模式把日志解析为变量向量，再在每个向量内自动提取运行时模式，据此拆成细粒度单元 Capsule 并附上取值摘要；查询时借助运行时模式和摘要跳过不可能匹配的 Capsule，避免解压与扫描。",
+    "results": "阿里云生产环境 21 类日志和 16 类公开日志：相对先进方案，查询延迟与总体成本降低一个数量级。",
+    "scenario": "云系统近线日志的压缩存储与关键字查询。",
+    "tags": [
+      "日志压缩",
+      "压缩域计算",
+      "无损"
+    ],
+    "evidence": "摘要",
+    "status": "main",
+    "caveat": "2026-11-16 补录。摘要取自 DOI 关联的公开摘要索引，出版商页面未直接读取；未逐表核验各类日志的压缩比与延迟。"
+  },
+  {
+    "id": "asplos22-tmo",
+    "title": "TMO: Transparent Memory Offloading in Datacenters",
+    "venue": "ASPLOS",
+    "year": 2022,
+    "url": "https://doi.org/10.1145/3503222.3507731",
+    "sources": [
+      {
+        "url": "https://doi.org/10.1145/3503222.3507731",
+        "label": "正式论文 / DOI"
+      }
+    ],
+    "problem": "DRAM 成本高且需求持续增长，需要把冷内存透明卸载到更便宜的介质，并适应多样的负载与不同卸载设备的性能差异。",
+    "method": "新增 Linux 内核机制，实时度量 CPU、内存和 I/O 资源不足造成的工作损失，据此在不需要应用先验知识的情况下自动调节卸载到压缩内存或 SSD 的内存量；同时覆盖匿名内存与文件缓存。",
+    "results": "已在 Meta 生产环境运行一年以上，在数百万台服务器上节省 20–32% 的总内存；机制已合入 Linux 内核上游。",
+    "scenario": "数据中心冷内存卸载（压缩内存、SSD）。",
+    "tags": [
+      "内存压缩",
+      "在线压缩",
+      "自适应"
+    ],
+    "evidence": "摘要",
+    "status": "appendix",
+    "caveat": "2026-11-16 补录。边缘相关：压缩内存是卸载后端之一，主要贡献是卸载量的自动控制机制；与主清单的 Software-Defined Far Memory（ASPLOS 2019）同属远内存路线，按压缩核心贡献的严格口径列入附录。"
   }
 ]
