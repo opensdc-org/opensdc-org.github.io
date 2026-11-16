@@ -1,0 +1,1675 @@
+{
+  "groups": [
+    "科学数据有损压缩 · CPU",
+    "科学数据有损压缩 · GPU 与加速器",
+    "无损压缩",
+    "渐进检索、QoI 与质量分析",
+    "I/O、AMR 与应用集成",
+    "通信压缩与分布式训练",
+    "LLM 权重、KV 缓存与模型压缩",
+    "日志与存储系统",
+    "内存、缓存与体系结构",
+    "通用接口与评测工具"
+  ],
+  "items": [
+    {
+      "id": "sz3",
+      "name": "SZ3",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "模块化的预测型误差有界有损压缩框架，SZ 系列当前主线，也是多篇后续工作的实现基座。",
+      "repo": "https://github.com/szcompressor/SZ3",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、C++、Python",
+      "build": "CMake",
+      "pushed": "2026-10",
+      "archived": false,
+      "release": "v3.4.0",
+      "modes": "ABS、REL、ABS_AND_REL、PSNR、L2 范数",
+      "example": "sz3 -f -i tools/sz3/testfloat_8_8_128.dat -z test.sz -3 8 8 128 -M REL 1e-3",
+      "basis": "README 引用了对应论文题名。",
+      "bench": true,
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "sz2",
+      "name": "SZ2",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "SZ 的上一代生产版本，很多论文把它作为 CPU 基线。",
+      "repo": "https://github.com/szcompressor/SZ2",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、Shell、Makefile",
+      "build": "CMake、Autotools",
+      "pushed": "2025-10",
+      "archived": false,
+      "release": "v2.1.12.5",
+      "paper_note": "对应论文早于本清单的时间范围；收录是因为它是常用基线。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "qoz",
+      "name": "QoZ / HPEZ",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "面向质量指标自调优的插值型压缩器；README 同时列出 QoZ（SC 2022）与其后继 HPEZ（SIGMOD 2024）。",
+      "repo": "https://github.com/szcompressor/QoZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Makefile",
+      "build": "CMake",
+      "pushed": "2025-06",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "faz",
+      "name": "FAZ",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "按数据特征自动组合预处理、预测与编码模块的误差有界压缩框架。",
+      "repo": "https://github.com/JLiu-1/FAZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Makefile",
+      "build": "CMake",
+      "pushed": "2025-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "szauto",
+      "name": "SZauto",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "带二阶预测和参数自动选择的 SZ C++ 版本。",
+      "repo": "https://github.com/hpdslab/SZauto",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Makefile",
+      "build": "CMake",
+      "pushed": "2022-01",
+      "archived": false,
+      "release": "1.2.1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "szx",
+      "name": "SZx",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "以速度为首要目标的超快误差有界压缩器。",
+      "repo": "https://github.com/szcompressor/SZx",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Shell、C++、Makefile",
+      "build": "CMake、Autotools",
+      "pushed": "2023-11",
+      "archived": false,
+      "basis": "szcompressor 组织下的同名仓库；README 未列论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "szp",
+      "name": "SZp（fZ-light）",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "极快的 CPU（OpenMP）误差有界压缩器；README 说明其设计以 fZ-light 之名发表于 SC 2024 的 hZCCL 论文。",
+      "repo": "https://github.com/szcompressor/SZp",
+      "license": "MIT",
+      "lang": "Shell、C++、Makefile",
+      "build": "CMake、Autotools",
+      "pushed": "2025-10",
+      "archived": false,
+      "release": "1.1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "mgard",
+      "name": "MGARD",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "多重网格误差受控的数据缩减与重构（refactoring）；同一仓库包含 GPU 可移植实现 MGARD-X、渐进检索 MDR，以及 ROI / QoI 保持模式。",
+      "repo": "https://github.com/CODARcode/MGARD",
+      "license": "Apache-2.0",
+      "lang": "C++、CMake、Shell",
+      "build": "CMake",
+      "pushed": "2026-10",
+      "archived": false,
+      "release": "1.6.0",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "sperr",
+      "name": "SPERR",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "基于小波与 SPECK 编码的有损压缩器，率失真表现强。",
+      "repo": "https://github.com/NCAR/SPERR",
+      "license": "Apache-2.0",
+      "lang": "C++、C、TeX",
+      "build": "CMake",
+      "pushed": "2026-10",
+      "archived": false,
+      "release": "v0.8.5",
+      "modes": "固定码率、PSNR、逐点误差（PWE）",
+      "basis": "README 引用了对应论文题名。",
+      "bench": true,
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "zfp",
+      "name": "ZFP",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "支持高速随机访问的压缩数值数组库，多数论文的变换型基线。",
+      "repo": "https://github.com/llnl/zfp",
+      "license": "BSD-3-Clause",
+      "lang": "C++、C、CMake",
+      "build": "CMake、Make、Python 包",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "1.0.1",
+      "modes": "固定码率、固定精度、固定误差（accuracy）与可逆模式",
+      "paper_note": "对应论文发表于 2014 年，早于本清单的时间范围；收录是因为它是常用基线，并已进入 OpenSDC-Bench。",
+      "bench": true,
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "tthresh",
+      "name": "TTHRESH",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "基于 Tucker 分解的多维网格数据压缩器。",
+      "repo": "https://github.com/rballester/tthresh",
+      "license": "LGPL-3.0",
+      "lang": "C++、CMake",
+      "build": "CMake",
+      "pushed": "2024-10",
+      "archived": false,
+      "modes": "相对误差、RMSE、PSNR",
+      "example": "tthresh -i data/3D_sphere_64_uchar.raw -t uchar -s 64 64 64 -p 30 -c data/comp.raw -o data/decomp.raw",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "ipcomp",
+      "name": "IPComp",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "基于插值的渐进式有损压缩器。",
+      "repo": "https://github.com/hpdslab/IPComp",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、C++、Python",
+      "build": "CMake",
+      "pushed": "2026-03",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "stz",
+      "name": "STZ",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "SC 2025 论文 artifact：支持流式、随机访问与分辨率渐进解压的有损压缩框架。",
+      "repo": "https://github.com/FabioGrosso/SC25-STZ2",
+      "license": "仓库未声明许可证",
+      "lang": "C++",
+      "build": "见 README",
+      "pushed": "2026-07",
+      "archived": false,
+      "release": "v0.2.0",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "pfpl",
+      "name": "PFPL",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "保证误差界、CPU 与 GPU 输出逐位一致的有损压缩器。",
+      "repo": "https://github.com/burtscher/PFPL",
+      "license": "BSD-3-Clause",
+      "lang": "C++、Cuda、C",
+      "build": "见 README",
+      "pushed": "2026-06",
+      "archived": false,
+      "modes": "ABS、REL、NOA",
+      "basis": "README 引用了对应论文题名。",
+      "bench": true,
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "falcons",
+      "name": "Falcons",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "面向并行科学应用、兼顾速度与压缩率的有损压缩器。",
+      "repo": "https://github.com/opensdc-org/Falcons",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Python",
+      "build": "CMake",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v1.1.0",
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "bench": true,
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "solarzip",
+      "name": "SolarZip",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "面向太阳极紫外（EUV）成像数据的误差有界有损压缩框架。",
+      "repo": "https://github.com/opensdc-org/SolarZip",
+      "license": "MIT",
+      "lang": "C++、C、Makefile",
+      "build": "CMake",
+      "pushed": "2025-09",
+      "archived": false,
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "apz",
+      "name": "APZ",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "面向宇宙学粒子数据（HyperMillennium、HACC）的误差有界压缩：位置和速度有界有损，粒子 ID 精确保留。",
+      "repo": "https://github.com/opensdc-org/APZ",
+      "license": "BSD-3-Clause",
+      "lang": "Python、Shell",
+      "build": "见 README",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v1.0.0",
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "photonzip",
+      "name": "PhotonZip",
+      "group": "科学数据有损压缩 · CPU",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "面向探测器与层析数据的 Python 封装，整合无损与误差有界有损编解码器（MANS、LC、PFPL）和 HDF5 过滤器。",
+      "repo": "https://github.com/opensdc-org/PhotonZip",
+      "license": "BSD-3-Clause",
+      "lang": "Python、C++、CMake",
+      "build": "CMake、Python 包",
+      "pushed": "2026-11",
+      "archived": false,
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "caiec",
+      "name": "CAIEC",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "基于 AI 的科学数据压缩框架，对模型推理与熵编码做协同设计以提高端到端吞吐。",
+      "repo": "https://github.com/opensdc-org/CAIEC",
+      "license": "BSD-3-Clause-Clear",
+      "lang": "Python、C++、Cuda",
+      "build": "Make、Python 包",
+      "pushed": "2026-08",
+      "archived": false,
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "cusz",
+      "name": "cuSZ",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "GPU 误差有界有损压缩框架；README 同时列出 cuSZ-i（SC 2024）与 cuSZ-Hi（SC 2025）。",
+      "repo": "https://github.com/szcompressor/cuSZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、Jupyter Notebook、Cuda",
+      "build": "CMake",
+      "pushed": "2026-10",
+      "archived": false,
+      "release": "v0.19.1",
+      "modes": "ABS、R2R（相对值域）",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "cuszp",
+      "name": "cuSZp",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "超高吞吐的单内核 GPU 误差有界压缩器；同一仓库承载 cuSZp（SC 2023）、cuSZp2（SC 2024）与 VGC / cuSZp3（SC 2025），AAtrox（ICS 2025）论文也指向它。",
+      "repo": "https://github.com/szcompressor/cuSZp",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Cuda、C、Python",
+      "build": "CMake",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "cuSZp-V3.0.0",
+      "modes": "ABS、REL",
+      "example": "./cuSZp -i pressure_3000 -t f32 -m plain -d 1 -eb abs 1E-4 -x pressure_3000.cuszp.cmp -o pressure_3000.cuszp.dec",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "fzgpu",
+      "name": "FZ-GPU",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "兼顾吞吐与压缩率的 GPU 有损压缩器。",
+      "repo": "https://github.com/szcompressor/FZ-GPU",
+      "license": "仓库未声明许可证",
+      "lang": "Cuda、C++、C",
+      "build": "Make",
+      "pushed": "2026-06",
+      "archived": false,
+      "release": "v.0.1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "szgpu",
+      "name": "SZ-GPU（FSZ）",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "FSZ 论文的实现：单内核内跨块传递预测状态，同时追求极高吞吐与较高压缩率。",
+      "repo": "https://github.com/szcompressor/SZ-GPU",
+      "license": "BSD-3-Clause",
+      "lang": "Cuda、Python、Fortran",
+      "build": "CMake、Make",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v1.0.1",
+      "modes": "ABS、REL、PSNR",
+      "example": "./build/szgpu -z -i velocity.f32 -o velocity.szgpu -eb rel 1e-3 -d 512 512 512",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "milio",
+      "name": "MILIO",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "采样引导的固定压缩率 GPU 有损压缩。",
+      "repo": "https://github.com/hyfshishen/MILIO",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Cuda、Python、Shell",
+      "build": "CMake",
+      "pushed": "2026-08",
+      "archived": false,
+      "example": "./build/examples/bin/cuszp_fixed_ratio_cli -i field.f32 -n 16777216 -r 4.0 -m outlier",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "gpz",
+      "name": "GPZ",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "面向大规模粒子数据的 GPU 误差有界有损压缩器。",
+      "repo": "https://github.com/hpdslab/GPZ",
+      "license": "仓库未声明许可证",
+      "lang": "Cuda、C++、CMake",
+      "build": "CMake",
+      "pushed": "2026-05",
+      "archived": false,
+      "modes": "ABS、REL",
+      "example": "./gpz -x -i merged_xyz.f32 -o ./merged_xyz.f32.gpz.compressed -f 32 -n 143735721 -p 3 -m rel -e 1e-4",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "lscomp",
+      "name": "lsCOMP",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "面向光源探测器数据和无符号整数的 GPU 有损 / 无损压缩器。",
+      "repo": "https://github.com/szcompressor/lsCOMP",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Cuda、C++、Python",
+      "build": "CMake",
+      "pushed": "2026-02",
+      "archived": false,
+      "example": "./lsCOMP_uint32 -i data/cssi.bin -d 600 1813 1558 -b 3 5 10 15 -p 0.5 -x data/cssi-cmp.bin",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "prism",
+      "name": "PRISM",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "基于多层插值的 GPU 渐进检索有损压缩框架。",
+      "repo": "https://github.com/opensdc-org/PRISM",
+      "license": "MIT",
+      "lang": "Cuda、C++、CMake",
+      "build": "CMake",
+      "pushed": "2026-09",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "particlegs",
+      "name": "ParticleGS",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "用 3D Gaussian Splatting 压缩并渲染科学粒子数据。",
+      "repo": "https://github.com/BoJiang03/ParticleGS",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Python、Cuda、Shell",
+      "build": "Python 包",
+      "pushed": "2026-09",
+      "archived": false,
+      "release": "sc26-final-data",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "fitfloat",
+      "name": "FitFloat",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "可随机读写的 GPU 压缩浮点数组，用来替换原生数组以缓解显存不足。",
+      "repo": "https://github.com/burtscher/FitFloat",
+      "license": "BSD-3-Clause",
+      "lang": "Cuda、Shell、C++",
+      "build": "见 README",
+      "pushed": "2026-08",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "ceaz",
+      "name": "CEAZ",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "FPGA"
+      ],
+      "summary": "Xilinx FPGA（Vivado HLS）上的误差有界有损压缩实现。",
+      "repo": "https://github.com/szcompressor/CEAZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、C++、Python",
+      "build": "见 README",
+      "pushed": "2021-06",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "dct-ai",
+      "name": "AI-Accelerator-Compression",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "其他加速器"
+      ],
+      "summary": "可移植到多种 AI 加速器的 DCT 压缩器。",
+      "repo": "https://github.com/mkshah5/AI-Accelerator-Compression",
+      "license": "仓库未声明许可证",
+      "lang": "Python",
+      "build": "见 README",
+      "pushed": "2024-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "tlrmvm",
+      "name": "TLR-MVM",
+      "group": "科学数据有损压缩 · GPU 与加速器",
+      "platform": [
+        "其他加速器"
+      ],
+      "summary": "Tile low-rank 矩阵向量乘，地震处理中代数压缩的实现。",
+      "repo": "https://github.com/ecrc/tlrmvm",
+      "license": "BSD-3-Clause",
+      "lang": "C++、Python、Cuda",
+      "build": "CMake、Python 包",
+      "pushed": "2024-12",
+      "archived": false,
+      "release": "tlrmvm-v0.0.2",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "ndzip",
+      "name": "ndzip",
+      "group": "无损压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "面向科学浮点网格数据的高吞吐并行无损压缩器，含 SIMD 与 GPU 版本。",
+      "repo": "https://github.com/celerity/ndzip",
+      "license": "MIT",
+      "lang": "C++、Cuda、C",
+      "build": "CMake",
+      "pushed": "2023-01",
+      "archived": false,
+      "release": "sc21-final",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "fpcompress",
+      "name": "FPcompress",
+      "group": "无损压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "ASPLOS 2025 论文的四种科学浮点无损压缩算法（单 / 双精度，速度或压缩率取向）。",
+      "repo": "https://github.com/burtscher/FPcompress",
+      "license": "BSD-3-Clause",
+      "lang": "C++、Cuda、C",
+      "build": "见 README",
+      "pushed": "2024-12",
+      "archived": false,
+      "release": "v1.0.3",
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "lc",
+      "name": "LC framework",
+      "group": "无损压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "用可组合组件合成无损与有损压缩算法的框架；ASPLOS 2025 浮点无损压缩论文的正文给出了它的链接。",
+      "repo": "https://github.com/burtscher/LC-framework",
+      "license": "BSD-3-Clause",
+      "lang": "C++、C、Python",
+      "build": "见 README",
+      "pushed": "2026-09",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "gpulz",
+      "name": "GPULZ",
+      "group": "无损压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "面向多字节数据的 GPU LZSS 无损压缩。",
+      "repo": "https://github.com/hpdss-group/ICS23-GPULZ",
+      "license": "仓库未声明许可证",
+      "lang": "Cuda、C++、Makefile",
+      "build": "Make",
+      "pushed": "2025-04",
+      "archived": false,
+      "release": "v.0.1",
+      "example": "./gpulz -i [input data path]",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "mans",
+      "name": "MANS",
+      "group": "无损压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "面向多字节整数数据的可移植 ANS 编码，支持 CPU、NVIDIA 与 AMD GPU。",
+      "repo": "https://github.com/opensdc-org/MANS",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Shell",
+      "build": "CMake、Docker",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "sc-ae",
+      "paper_note": "本清单未收录其对应论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "clustracomp",
+      "name": "ClustraComp",
+      "group": "无损压缩",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "把相似文件块分组后再用 LZ4 或 Zstandard 压缩的实验框架，实现了 Odess 与 Palantir 两种分组策略。",
+      "repo": "https://github.com/opensdc-org/ClustraComp",
+      "license": "BSD-3-Clause",
+      "lang": "C、Shell、Makefile",
+      "build": "Make",
+      "pushed": "2026-11",
+      "archived": false,
+      "paper_note": "本清单未收录其对应论文；其中 Palantir 分组策略对应主清单的 ASPLOS 2024 论文。",
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "gfaz",
+      "name": "GFAz",
+      "group": "无损压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "泛基因组 GFA 文件的专用压缩器。",
+      "repo": "https://github.com/babyplutokurt/GFAz",
+      "license": "MIT",
+      "lang": "C++、Python、Cuda",
+      "build": "CMake",
+      "pushed": "2026-09",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "pac",
+      "name": "PAC",
+      "group": "无损压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "神经自回归通用无损压缩器。",
+      "repo": "https://github.com/mynotwo/Faster-and-Stronger-Lossless-Compression-with-Optimized-Autoregressive-Framework",
+      "license": "MIT",
+      "lang": "Python",
+      "build": "见 README",
+      "pushed": "2023-05",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "prodm",
+      "name": "ProDM",
+      "group": "渐进检索、QoI 与质量分析",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "渐进式数据管理库；README 列出 SC 2026 渐进压缩与 HPDC 2026 QProR 两篇论文。",
+      "repo": "https://github.com/lxAltria/ProDM",
+      "license": "仓库未声明许可证",
+      "lang": "C++、Shell、Python",
+      "build": "CMake",
+      "pushed": "2026-09",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "qpet",
+      "name": "QPET",
+      "group": "渐进检索、QoI 与质量分析",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "可集成到多种误差有界压缩器的 QoI 保真框架；另有论文 artifact 仓库 JLiu-1/QPET-Artifact。",
+      "repo": "https://github.com/JLiu-1/QPET",
+      "license": "BSD-3-Clause",
+      "lang": "C++、Python、CMake",
+      "build": "CMake",
+      "pushed": "2026-10",
+      "archived": false,
+      "modes": "ABS、REL",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "topiq",
+      "name": "TOPIQ",
+      "group": "渐进检索、QoI 与质量分析",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "有损压缩下 QoI 误差的统计传播与不确定性预测。",
+      "repo": "https://github.com/Karshilov/TOPIQ",
+      "license": "仓库未声明许可证",
+      "lang": "Python、C++、Shell",
+      "build": "见 README",
+      "pushed": "2026-08",
+      "archived": false,
+      "release": "sc26-artifact",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "foresight",
+      "name": "VizAly-Foresight",
+      "group": "渐进检索、QoI 与质量分析",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "面向科学分析的数据缩减评测套件。",
+      "repo": "https://github.com/lanl/VizAly-Foresight",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、Python、Shell",
+      "build": "见 README",
+      "pushed": "2023-12",
+      "archived": false,
+      "release": "jwang-drbsd22",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "arc",
+      "name": "ARC",
+      "group": "渐进检索、QoI 与质量分析",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "为有损压缩数据自动选择纠错码配置的容错库。",
+      "repo": "https://github.com/FTHPC/ARC",
+      "license": "仓库未声明许可证",
+      "lang": "C、Makefile",
+      "build": "Make",
+      "pushed": "2021-12",
+      "archived": false,
+      "basis": "同名仓库，README 描述与论文一致；未列论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "amric",
+      "name": "AMRIC",
+      "group": "I/O、AMR 与应用集成",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "AMR 应用的原位有损压缩与 I/O 框架。",
+      "repo": "https://github.com/hpdss-group/SC23-AMRIC",
+      "license": "仓库未声明许可证",
+      "lang": "C++、C、Python",
+      "build": "见 README",
+      "pushed": "2024-08",
+      "archived": false,
+      "release": "v0.1.0",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "tac",
+      "name": "TAC",
+      "group": "I/O、AMR 与应用集成",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "三维 AMR 数据的误差有界压缩。",
+      "repo": "https://github.com/hpdss-group/HPDC22-TAC",
+      "license": "仓库未声明许可证",
+      "lang": "C++、Shell",
+      "build": "见 README",
+      "pushed": "2023-04",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "hdf5-sz",
+      "name": "SC22-HDF5-SZ",
+      "group": "I/O、AMR 与应用集成",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "预测型有损压缩与 HDF5 并行写入的深度集成。",
+      "repo": "https://github.com/hpdss-group/SC22-HDF5-SZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、Shell、Python",
+      "build": "CMake",
+      "pushed": "2022-07",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "insitu-io",
+      "name": "EuroSys-AsyncSchedule4IO",
+      "group": "I/O、AMR 与应用集成",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "压缩与异步 I/O 的原位任务调度（EuroSys 2024 artifact）。",
+      "repo": "https://github.com/jinsian/EuroSys-AsyncSchedule4IO",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、C++、HTML",
+      "build": "见 README",
+      "pushed": "2023-10",
+      "archived": false,
+      "release": "v.0.1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "bmqsim",
+      "name": "Compression-based State Vector Simulator",
+      "group": "I/O、AMR 与应用集成",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "用压缩突破内存限制的量子电路状态向量模拟器。",
+      "repo": "https://github.com/FujitsuResearch/Compression-based-State-Vector-Simulator",
+      "license": "Apache-2.0",
+      "lang": "C++、Cuda、CMake",
+      "build": "CMake、Python 包",
+      "pushed": "2026-10",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "zccl",
+      "name": "ZCCL",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "压缩加速的集合通信库；README 列出 hZCCL（SC 2024）与 ZCCL（IPDPS 2024）。",
+      "repo": "https://github.com/ZCCLorg/zccl",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、Shell、M4",
+      "build": "见 README",
+      "pushed": "2025-07",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "coccl",
+      "name": "COCCL",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "可插拔压缩的 GPU 集合通信库，面向大模型训练。",
+      "repo": "https://github.com/hpdss-group/COCCL",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、Cuda、C",
+      "build": "CMake、Make",
+      "pushed": "2026-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "compso",
+      "name": "COMPSO",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "二阶优化器分布式训练的梯度压缩（GPU 实现）；论文 artifact 另见 Presciman/PPoPP25-COMPSO。",
+      "repo": "https://github.com/Presciman/COMPSO_Compressor",
+      "license": "仓库未声明许可证",
+      "lang": "Cuda、Python、Shell",
+      "build": "见 README",
+      "pushed": "2026-04",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "safusion",
+      "name": "SAFusion",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "先稀疏化再做张量融合的分布式训练通信优化。",
+      "repo": "https://github.com/YuchongHu/SAFusion",
+      "license": "GPL-3.0",
+      "lang": "Python、Shell",
+      "build": "见 README",
+      "pushed": "2025-05",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "hipress",
+      "name": "HiPress",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "压缩感知的梯度同步与 GPU 压缩器开发框架。",
+      "repo": "https://gitlab.com/hipress/hipress",
+      "license": "仓库未声明许可证",
+      "lang": "",
+      "build": "见 README",
+      "pushed": "2022-12",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "thc",
+      "name": "BytePS_THC",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "张量同态压缩（THC）在 BytePS 上的实现。",
+      "repo": "https://github.com/SophiaLi06/BytePS_THC",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Python、C++、C",
+      "build": "Python 包",
+      "pushed": "2024-07",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "optimus-cc",
+      "name": "Optimus-CC",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "感知三维并行的大模型训练通信压缩。",
+      "repo": "https://github.com/AIS-SNU/Optimus-CC",
+      "license": "MIT",
+      "lang": "Python、Shell、C++",
+      "build": "见 README",
+      "pushed": "2024-08",
+      "archived": false,
+      "release": "ASPLOS'23",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "netzip",
+      "name": "NetZIP",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "FPGA"
+      ],
+      "summary": "大模型训练的网络内无损压缩，算法与 FPGA 硬件协同设计。",
+      "repo": "https://github.com/ece-fast-lab/MICRO-2025-NetZIP",
+      "license": "MIT",
+      "lang": "Python、Shell",
+      "build": "见 README",
+      "pushed": "2025-09",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "oscar",
+      "name": "OSCAR-Artifacts",
+      "group": "通信压缩与分布式训练",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "压缩感知的梯度拆分与集合通信（HPCA 2026 artifact）。",
+      "repo": "https://github.com/pmajhi/OSCAR-Artifacts",
+      "license": "Apache-2.0",
+      "lang": "Python、Shell、C",
+      "build": "见 README",
+      "pushed": "2025-12",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "cachegen",
+      "name": "CacheGen",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "KV 缓存压缩与流式传输的论文代码。",
+      "repo": "https://github.com/UChi-JCL/CacheGen",
+      "license": "仓库未声明许可证",
+      "lang": "Python、Shell",
+      "build": "见 README",
+      "pushed": "2024-10",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "lmcache",
+      "name": "LMCache",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "持续维护的 LLM KV 缓存层，README 引用 CacheGen 论文。",
+      "repo": "https://github.com/LMCache/LMCache",
+      "license": "Apache-2.0",
+      "lang": "Python、Go、Shell",
+      "build": "CMake、Python 包",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v0.5.7.post1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "hack",
+      "name": "HACK",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "在量化 KV 上直接做近似矩阵乘的分离式 LLM 推理系统。",
+      "repo": "https://github.com/Zeyu-ZEYU/HACK",
+      "license": "Apache-2.0",
+      "lang": "Python、Dockerfile",
+      "build": "Python 包",
+      "pushed": "2026-10",
+      "archived": false,
+      "release": "v1.0.0",
+      "note": "该仓库对应同名完整论文（README 标注为 USENIX ATC 2026）；SIGCOMM 2025 短文阶段的代码在 pcl-projects/HACK。",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "kvserve",
+      "name": "KVServe",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "随负载、带宽和 SLO 自适应选择 KV 压缩配置的服务框架。",
+      "repo": "https://github.com/hpdss-group/KVServe",
+      "license": "Apache-2.0",
+      "lang": "Python、Cuda、Shell",
+      "build": "Python 包",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v0.2.1",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "deltazip",
+      "name": "DeltaZip",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "压缩微调模型差分并服务多个全参数微调 LLM；artifact 另见 eth-easl/deltazip-ae。",
+      "repo": "https://github.com/eth-easl/deltazip",
+      "license": "Apache-2.0",
+      "lang": "Jupyter Notebook、Python、Cuda",
+      "build": "Make、Python 包",
+      "pushed": "2025-07",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "zipllm",
+      "name": "ZipLLM",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "模型感知的去重与差分压缩，用于 LLM 模型库存储。",
+      "repo": "https://github.com/ds2-lab/ZipLLM",
+      "license": "Apache-2.0",
+      "lang": "Rust、Python、Shell",
+      "build": "Cargo",
+      "pushed": "2026-02",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "zipserv",
+      "name": "ZipServ",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "硬件感知的 LLM 权重无损压缩与推理融合。",
+      "repo": "https://github.com/HPMLL/ZipServ_ASPLOS26",
+      "license": "Apache-2.0",
+      "lang": "Cuda、C++、Makefile",
+      "build": "见 README",
+      "pushed": "2025-12",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "decdec",
+      "name": "DecDEC",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "低比特 LLM 量化的动态残差补偿。",
+      "repo": "https://github.com/SNU-ARC/DecDEC",
+      "license": "仓库未声明许可证",
+      "lang": "Python、Cuda、C++",
+      "build": "见 README",
+      "pushed": "2026-10",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "llm265",
+      "name": "LLM.265",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "用视频编解码器压缩 LLM 权重、KV 缓存与训练张量。",
+      "repo": "https://github.com/Entropy-xcy/llm.265",
+      "license": "Apache-2.0",
+      "lang": "Python、C++",
+      "build": "Python 包",
+      "pushed": "2025-08",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "ibp",
+      "name": "InvariantBitPacking",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "GPU"
+      ],
+      "summary": "删除张量组内不变比特的 GPU 无损压缩，用于缓解显存瓶颈。",
+      "repo": "https://github.com/AKKamath/InvariantBitPacking",
+      "license": "MIT",
+      "lang": "Cuda、Python、Makefile",
+      "build": "Make、Python 包、Docker",
+      "pushed": "2026-05",
+      "archived": false,
+      "release": "1.0",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "其他加速器"
+      ],
+      "summary": "量化神经网络张量的近算术编码无损压缩。",
+      "repo": "https://github.com/moshovos/Atalanta",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、Python",
+      "build": "见 README",
+      "pushed": "2023-12",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "deepsz",
+      "name": "DeepSZ",
+      "group": "LLM 权重、KV 缓存与模型压缩",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "用误差有界有损压缩来压缩 DNN 权重。",
+      "repo": "https://github.com/szcompressor/DeepSZ",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Python、Shell",
+      "build": "见 README",
+      "pushed": "2020-10",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "clp",
+      "name": "CLP",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "可直接搜索的压缩日志处理工具，持续维护；μSlope 论文正文也指向该仓库。",
+      "repo": "https://github.com/y-scope/clp",
+      "license": "Apache-2.0",
+      "lang": "C++、Rust、TypeScript",
+      "build": "Cargo",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "v0.14.1",
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "logreducer",
+      "name": "LogReducer",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "基于解析器的日志压缩器。",
+      "repo": "https://github.com/THUBear-wjy/LogReducer",
+      "license": "Apache-2.0",
+      "lang": "Python、C++、C",
+      "build": "见 README",
+      "pushed": "2021-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "loggrep",
+      "name": "LogGrep",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "利用静态与运行时模式的日志压缩与查询工具。",
+      "repo": "https://github.com/THUBear-wjy/LogGrep",
+      "license": "Apache-2.0",
+      "lang": "C、C++、Python",
+      "build": "见 README",
+      "pushed": "2023-09",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "deepsketch",
+      "name": "DeepSketch",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "用学习式哈希为去重后差分压缩搜索参考块。",
+      "repo": "https://github.com/postech-caoslab/deepsketch-fast2022",
+      "license": "仓库未声明许可证",
+      "lang": "Roff、C++、C",
+      "build": "见 README",
+      "pushed": "2022-05",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接（原地址 dgist-datalab/deepsketch-fast2022，现跳转至此）。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "tvstore",
+      "name": "TVStore",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "随数据年龄改变压缩精度、存储有界的时序数据库。",
+      "repo": "https://github.com/thulab/TVStore",
+      "license": "Apache-2.0",
+      "lang": "Java、Scala、Shell",
+      "build": "见 README",
+      "pushed": "2022-02",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "cczns",
+      "name": "CCZNS",
+      "group": "日志与存储系统",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "主机与 SSD 协同的 ZNS 存储内压缩原型。",
+      "repo": "https://github.com/yingjia-wang/CCZNS",
+      "license": "仓库未声明许可证",
+      "lang": "C、C++、Python",
+      "build": "见 README",
+      "pushed": "2025-01",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "rst",
+      "name": "RST",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "支持随机访问的硬件序列压缩。",
+      "repo": "https://github.com/HEAP-Lab-VT/rst",
+      "license": "BSD-3-Clause-Clear",
+      "lang": "HTML",
+      "build": "见 README",
+      "pushed": "2026-10",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "tmcc",
+      "name": "ASIC-DEFLATE-for-memory",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "面向内存的 Deflate 解压加速器（TMCC 论文）。",
+      "repo": "https://github.com/HEAP-Lab-VT/ASIC-DEFLATE-for-memory",
+      "license": "MIT",
+      "lang": "Scala、C++、Java",
+      "build": "见 README",
+      "pushed": "2024-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "dmu",
+      "name": "DMU",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "硬件压缩内存下的容量管理原型。",
+      "repo": "https://github.com/HEAP-Lab-VT/DMU",
+      "license": "仓库未声明许可证",
+      "lang": "C++、Batchfile、C",
+      "build": "见 README",
+      "pushed": "2024-11",
+      "archived": false,
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "smash",
+      "name": "SMASH",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "多层位图稀疏矩阵编码与硬件索引。",
+      "repo": "https://github.com/CMU-SAFARI/SMASH",
+      "license": "仓库未声明许可证",
+      "lang": "C、Python、C++",
+      "build": "见 README",
+      "pushed": "2020-05",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "ibex",
+      "name": "IBEX",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "CXL 内存扩展的带宽高效压缩架构。",
+      "repo": "https://github.com/relacslab/ibex-ics26",
+      "license": "MIT",
+      "lang": "HTML、C++、Python",
+      "build": "见 README",
+      "pushed": "2026-04",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "cold-memory",
+      "name": "cold-memory-model（COLA）",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "冷内存局部性模型与访问轨迹生成器。",
+      "repo": "https://github.com/google-systems-research/cold-memory-model",
+      "license": "Apache-2.0",
+      "lang": "Python",
+      "build": "见 README",
+      "pushed": "2026-08",
+      "archived": false,
+      "release": "v1.0.0",
+      "basis": "论文正文给出该仓库链接。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "sabre",
+      "name": "Sabre artifacts",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "Serverless microVM 快照的硬件加速压缩（OSDI 2024 artifact）。",
+      "repo": "https://github.com/barabanshek/sabre",
+      "license": "仓库未声明许可证",
+      "lang": "Python、Dockerfile、Shell",
+      "build": "见 README",
+      "pushed": "2024-06",
+      "archived": false,
+      "basis": "第一作者的 artifact 仓库；README 使用的是论文较早的题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "compressedlut",
+      "name": "CompressedLUT",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "FPGA"
+      ],
+      "summary": "查找表无损压缩并生成 RTL / HLS 的工具。",
+      "repo": "https://github.com/kiabuzz/CompressedLUT",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、Makefile",
+      "build": "Make",
+      "pushed": "2024-04",
+      "archived": false,
+      "release": "1.3.2",
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "safecracker",
+      "name": "Safecracker artifact",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "压缩缓存侧信道攻击的论文 artifact（Zenodo 归档，DOI 10.5281/zenodo.3612803）。",
+      "repo": "https://zenodo.org/records/3612803",
+      "license": "仓库未声明许可证",
+      "lang": "",
+      "build": "见归档说明",
+      "pushed": "",
+      "archived": false,
+      "basis": "论文正文给出该 Zenodo 记录。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "smartdimm",
+      "name": "SmartDIMM artifact",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "硬件"
+      ],
+      "summary": "近内存协议卸载（含 Deflate 加速器）的 artifact。",
+      "repo": "https://github.com/architecture-research-group/SmartDIMM_ArtifactEvaluation",
+      "license": "仓库未声明许可证",
+      "lang": "",
+      "build": "见 README",
+      "pushed": "2023-12",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "armor",
+      "name": "ARMOR",
+      "group": "内存、缓存与体系结构",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "以节点压缩缓解前端瓶颈的 RTL 仿真加速。",
+      "repo": "https://github.com/jptang99-star/ARMOR",
+      "license": "MIT",
+      "lang": "FIRRTL、Scala、C++",
+      "build": "见 README",
+      "pushed": "2026-11",
+      "archived": false,
+      "basis": "README 引用了对应论文题名。",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "opensdc-bench",
+      "name": "OpenSDC-Bench",
+      "group": "通用接口与评测工具",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "OpenSDC 的评测套件：统一协议、质量指标库、数据集清单和排行榜生成。",
+      "repo": "https://github.com/opensdc-org/OpenSDC-Bench",
+      "license": "仓库未声明许可证",
+      "lang": "Python、C++、JavaScript",
+      "build": "Python 包",
+      "pushed": "2026-11",
+      "archived": false,
+      "host": "OpenSDC",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "libpressio",
+      "name": "LibPressio",
+      "group": "通用接口与评测工具",
+      "platform": [
+        "CPU",
+        "GPU"
+      ],
+      "summary": "在多种无损与有损压缩器之上提供统一接口的库，可用同一套代码调用 SZ、ZFP、MGARD 等。",
+      "repo": "https://github.com/robertu94/libpressio",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C++、C、Python",
+      "build": "CMake",
+      "pushed": "2026-11",
+      "archived": false,
+      "release": "0.70.0",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "qcat",
+      "name": "QCAT",
+      "group": "通用接口与评测工具",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "轻量的压缩质量分析工具集（数据转换、误差与 PSNR、SSIM 计算等）。",
+      "repo": "https://github.com/szcompressor/qcat",
+      "license": "BSD-2-Clause",
+      "lang": "C、Shell、Makefile",
+      "build": "CMake、Autotools",
+      "pushed": "2026-08",
+      "archived": false,
+      "release": "1.6",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "z-checker",
+      "name": "Z-checker",
+      "group": "通用接口与评测工具",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "刻画数据特征并检查有损压缩结果的分析库。",
+      "repo": "https://github.com/CODARcode/Z-checker",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "C、Shell、C++",
+      "build": "CMake、Autotools",
+      "pushed": "2025-08",
+      "archived": false,
+      "release": "0.10.0",
+      "checked": "2026-11-16"
+    },
+    {
+      "id": "sdrbench-py",
+      "name": "sdrbench（Python）",
+      "group": "通用接口与评测工具",
+      "platform": [
+        "CPU"
+      ],
+      "summary": "用 Python 按字段读取 SDRBench 数据集（Hugging Face 镜像，带校验）。",
+      "repo": "https://github.com/szcompressor/sdrbench",
+      "license": "有 LICENSE 文件（非标准模板）",
+      "lang": "Python",
+      "build": "Python 包",
+      "pushed": "2026-10",
+      "archived": false,
+      "checked": "2026-11-16"
+    }
+  ]
+}

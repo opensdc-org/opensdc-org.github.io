@@ -1,0 +1,516 @@
+[
+  {
+    "id": "nyx",
+    "name": "NYX",
+    "group": "SDRBench 科学数据",
+    "domain": "宇宙学（自适应网格流体 + N 体模拟）",
+    "layout": "6 个字段，三维 512×512×512，单精度，小端",
+    "size": "2.7 GB（另有 log 变换版本 2.7 GB）",
+    "provider": "Zarija Lukic（LBNL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#nyx",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/nyx",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "bench": "6 个字段，float32，512×512×512",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "cesm-atm",
+    "name": "CESM-ATM",
+    "group": "SDRBench 科学数据",
+    "domain": "气候模拟（大气）",
+    "layout": "数据集 1：79 个字段，二维 1800×3600（cleared 版 77 个字段）；数据集 2：33 个字段，三维 26×1800×3600；单精度，小端",
+    "size": "数据集 1：1.47 GB；数据集 2：17 GB",
+    "provider": "Mark Taylor（SNL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#cesm-atm",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/cesm-atm",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "bench": "77 个字段，float32，1800×3600（二维原始版；两个全零字段不参与相对误差评测）",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "hurricane",
+    "name": "Hurricane ISABEL",
+    "group": "SDRBench 科学数据",
+    "domain": "天气模拟（飓风）",
+    "layout": "13 个字段，三维 100×500×500，单精度；提供第 48 步快照（另含 7 个 log10 变换字段）和各字段 48 个时间步的归档",
+    "size": "第 48 步快照 1.25 GB；各字段 48 步归档约 0.2–4.2 GB",
+    "provider": "IEEE Visualization 2004 Contest",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#hurricane-isabel",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/hurricane-isabel",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "bench": "20 个字段（13 个原始 + 7 个 log10），float32，100×500×500，第 48 步",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "miranda",
+    "name": "Miranda",
+    "group": "SDRBench 科学数据",
+    "domain": "流体力学（大规模湍流混合）",
+    "layout": "小规模：7 个字段，三维 256×384×384，双精度；大规模：密度场 3072×3072×3072，单精度，分 96 个切片存放",
+    "size": "小规模 1.87 GB；大规模 106 GB",
+    "provider": "Peter Lindstrom（LLNL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#miranda",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/miranda",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "bench": "7 个字段，float64，256×384×384（小规模）",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "scale-letkf",
+    "name": "SCALE-LETKF",
+    "group": "SDRBench 科学数据",
+    "domain": "气候模拟（区域天气同化）",
+    "layout": "13 个字段，三维，单精度，小端",
+    "size": "4.9 GB",
+    "provider": "RIKEN（SCALE-RM 模式的 LETKF 同化数据）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#scale-letkf",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/scale-letkf",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "bench": "12 个字段，float32，98×1200×1200",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "hacc",
+    "name": "HACC",
+    "group": "SDRBench 科学数据",
+    "domain": "宇宙学（粒子模拟）",
+    "layout": "单快照 6 个字段（x、y、z、vx、vy、vz），一维粒子数组，单精度；另有多时间步区域数据（坐标 + 64 位粒子 ID）",
+    "size": "数据集 1：19 GB；数据集 2：5 GB；数据集 3：18.12 GB；多时间步区域每组约 13 GB",
+    "provider": "HACC 团队（ECP ExaSky）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#hacc",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/hacc",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "terms": "使用时请引用 Heitmann et al., Astrophys. J. Suppl. 252 (2021)。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "exaalt",
+    "name": "EXAALT",
+    "group": "SDRBench 科学数据",
+    "domain": "分子动力学模拟",
+    "layout": "6 个字段（x、y、z、vx、vy、vz），各字段单独存放，单精度，小端",
+    "size": "三组：60 MB、973 MB、2.4 GB",
+    "provider": "EXAALT 团队（LANL，LA-UR-18-25670）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#exaalt",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/exaalt",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "exafel",
+    "name": "EXAFEL",
+    "group": "SDRBench 科学数据",
+    "domain": "光源实验（LCLS 探测器图像）",
+    "layout": "数据集 1：3 个文件，10×32×185×388，16 位无符号整数；数据集 2：986×32×185×388，单精度；数据集 3：130×1480×1552，单精度，附峰位置与计数",
+    "size": "51 MB、8.5 GB、1 GB",
+    "provider": "LCLS",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#exafel",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/exafel",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "qmcpack",
+    "name": "QMCPACK",
+    "group": "SDRBench 科学数据",
+    "domain": "量子蒙特卡罗（电子结构）",
+    "layout": "1 个字段，288 个轨道，每个为 115×69×69 三维网格，单精度；归档为原始布局 115×69×69×288",
+    "size": "1 GB",
+    "provider": "QMCPACK 性能测试（ANL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#qmcpack",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/qmcpack",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "s3d",
+    "name": "S3D",
+    "group": "SDRBench 科学数据",
+    "domain": "燃烧模拟",
+    "layout": "11 个字段，三维 500×500×500，双精度，小端",
+    "size": "44 GB",
+    "provider": "Hemanth Kolla（SNL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#s3d",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/s3d",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "nwchem",
+    "name": "NWChem",
+    "group": "SDRBench 科学数据",
+    "domain": "量子化学（双电子排斥积分）",
+    "layout": "3 个字段，一维，双精度（另含单精度副本）",
+    "size": "16 GB",
+    "provider": "libint（Valeev 研究组，Virginia Tech）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#nwchem",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/nwchem",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "xgc",
+    "name": "XGC",
+    "group": "SDRBench 科学数据",
+    "domain": "聚变模拟",
+    "layout": "9 个时间步，非结构网格，20694×512，双精度；ADIOS2 .bp 格式，另有二进制版本",
+    "size": "1.2 GB",
+    "provider": "PPPL",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#xgc",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/xgc",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "terms": ".bp 文件需要 ADIOS2 读取。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "basilisk",
+    "name": "Basilisk-Turbulence",
+    "group": "SDRBench 科学数据",
+    "domain": "二维衰减湍流（时变向量场）",
+    "layout": "4 个字段（两组时变二维场的 u、v 分量），1501×1024×1024 与 1001×2048×2048，单精度",
+    "size": "40 GB",
+    "provider": "Xia et al., ICDE 2026",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#basilisk-turbulence",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      },
+      {
+        "url": "https://huggingface.co/datasets/sdrbench/basilisk-turbulence",
+        "label": "Hugging Face 镜像"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "nstx-gpi",
+    "name": "NSTX GPI",
+    "group": "SDRBench 科学数据",
+    "domain": "聚变实验（气体喷射成像）",
+    "layout": "369,357 步的二维时间序列，80×64 图像，双精度；ADIOS1 .bp 格式",
+    "size": "4.1 GB",
+    "provider": "Michael Churchill（PPPL）",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#nstx-gpi",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      }
+    ],
+    "terms": "可免费使用，发表结果前需先与数据提供者确认。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "brown",
+    "name": "Brown Samples",
+    "group": "SDRBench 科学数据",
+    "domain": "合成数据（按指定规则度生成）",
+    "layout": "一维，双精度，3 组不同规则度",
+    "size": "每组 256 MB",
+    "provider": "Brown University",
+    "links": [
+      {
+        "url": "https://sdrbench.github.io/datasets.html#brown-samples",
+        "label": "SDRBench 条目（下载链接与命令示例）"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "jhtdb",
+    "name": "JHTDB",
+    "group": "其他科学数据",
+    "domain": "湍流直接数值模拟（Johns Hopkins Turbulence Databases）",
+    "layout": "在线数据库，按需截取子区域；各论文截取的范围与分辨率不同",
+    "size": "随截取范围而定",
+    "provider": "Johns Hopkins University",
+    "links": [
+      {
+        "url": "https://turbulence.pha.jhu.edu/",
+        "label": "JHTDB 官网"
+      }
+    ],
+    "terms": "不是固定归档：复现时需要按论文给出的范围重新截取。OpenSDC-Bench 保留了历史结果，但尚未发布其数据来源与裁剪清单。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "rtm",
+    "name": "RTM",
+    "group": "其他科学数据",
+    "domain": "地震成像（逆时偏移模拟）",
+    "layout": "三维波场快照序列；各论文使用的尺寸不同",
+    "size": "随论文而定",
+    "provider": "见各论文",
+    "links": [],
+    "terms": "多篇 SZ 系列论文使用，但 SDRBench 当前目录未收录，本目录未找到公开下载入口。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "amr",
+    "name": "AMR 模拟输出（Nyx / WarpX）",
+    "group": "其他科学数据",
+    "domain": "自适应网格（AMReX）应用",
+    "layout": "多层级、不规则占用的网格数据，由模拟程序直接输出",
+    "size": "随模拟配置而定",
+    "provider": "AMReX 应用",
+    "links": [
+      {
+        "url": "https://github.com/AMReX-Astro/Nyx",
+        "label": "Nyx 代码仓库"
+      },
+      {
+        "url": "https://github.com/BLAST-WarpX/warpx",
+        "label": "WarpX 代码仓库"
+      }
+    ],
+    "terms": "不是静态数据集：需要按论文给出的配置运行模拟来生成。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "spec2017",
+    "name": "SPEC CPU 2017",
+    "group": "系统与体系结构基准",
+    "domain": "CPU 基准程序集（内存 / 缓存压缩论文的常用负载）",
+    "layout": "43 个基准程序；论文通常取其内存访问轨迹或内存镜像",
+    "size": "—",
+    "provider": "SPEC",
+    "links": [
+      {
+        "url": "https://www.spec.org/cpu2017/",
+        "label": "SPEC CPU 2017"
+      }
+    ],
+    "terms": "商业许可，需购买。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "spec2006",
+    "name": "SPEC CPU 2006",
+    "group": "系统与体系结构基准",
+    "domain": "CPU 基准程序集（上一代）",
+    "layout": "—",
+    "size": "—",
+    "provider": "SPEC",
+    "links": [
+      {
+        "url": "https://www.spec.org/cpu2006/",
+        "label": "SPEC CPU 2006"
+      }
+    ],
+    "terms": "已退役；商业许可。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "parsec",
+    "name": "PARSEC",
+    "group": "系统与体系结构基准",
+    "domain": "多线程基准程序集",
+    "layout": "—",
+    "size": "—",
+    "provider": "Princeton University",
+    "links": [
+      {
+        "url": "https://github.com/bamos/parsec-benchmark",
+        "label": "社区维护的代码镜像"
+      }
+    ],
+    "terms": "官网 parsec.cs.princeton.edu 在 2026-11-16 核查时无法访问。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "gapbs",
+    "name": "GAP Benchmark Suite",
+    "group": "系统与体系结构基准",
+    "domain": "图分析基准",
+    "layout": "—",
+    "size": "—",
+    "provider": "UC Berkeley",
+    "links": [
+      {
+        "url": "https://github.com/sbeamer/gapbs",
+        "label": "GAPBS 代码仓库"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "tpc",
+    "name": "TPC-H / TPC-DS",
+    "group": "系统与体系结构基准",
+    "domain": "数据库决策支持基准",
+    "layout": "按规模因子生成的表数据",
+    "size": "随规模因子而定",
+    "provider": "TPC",
+    "links": [
+      {
+        "url": "https://www.tpc.org/",
+        "label": "TPC"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "ycsb",
+    "name": "YCSB",
+    "group": "系统与体系结构基准",
+    "domain": "键值存储负载生成器",
+    "layout": "—",
+    "size": "—",
+    "provider": "Yahoo! Research",
+    "links": [
+      {
+        "url": "https://github.com/brianfrankcooper/YCSB",
+        "label": "YCSB 代码仓库"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "imagenet",
+    "name": "ImageNet",
+    "group": "AI 训练与推理数据",
+    "domain": "图像分类（训练通信 / 模型压缩论文的常用任务）",
+    "layout": "ILSVRC 2012：约 128 万张训练图像",
+    "size": "约 150 GB",
+    "provider": "ImageNet",
+    "links": [
+      {
+        "url": "https://huggingface.co/datasets/ILSVRC/imagenet-1k",
+        "label": "Hugging Face：ILSVRC/imagenet-1k"
+      }
+    ],
+    "terms": "需登录并同意使用条款。官网 image-net.org 在 2026-11-16 核查时无法从本机访问。",
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "wikitext",
+    "name": "WikiText",
+    "group": "AI 训练与推理数据",
+    "domain": "语言模型评测语料（困惑度）",
+    "layout": "—",
+    "size": "—",
+    "provider": "Salesforce Research",
+    "links": [
+      {
+        "url": "https://huggingface.co/datasets/Salesforce/wikitext",
+        "label": "Hugging Face：Salesforce/wikitext"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "silesia",
+    "name": "Silesia corpus",
+    "group": "通用压缩与日志语料",
+    "domain": "通用无损压缩语料",
+    "layout": "12 个文件（文本、数据库、可执行文件、图像等）",
+    "size": "约 211 MB",
+    "provider": "Silesian University of Technology",
+    "links": [
+      {
+        "url": "https://sun.aei.polsl.pl/~sdeor/index.php?page=silesia",
+        "label": "Silesia compression corpus"
+      }
+    ],
+    "checked": "2026-11-16"
+  },
+  {
+    "id": "loghub",
+    "name": "Loghub",
+    "group": "通用压缩与日志语料",
+    "domain": "系统日志数据集合",
+    "layout": "来自分布式系统、超算、操作系统、移动与服务端应用的多类日志",
+    "size": "—",
+    "provider": "LOGPAI",
+    "links": [
+      {
+        "url": "https://github.com/logpai/loghub",
+        "label": "Loghub 代码仓库"
+      }
+    ],
+    "checked": "2026-11-16"
+  }
+]
