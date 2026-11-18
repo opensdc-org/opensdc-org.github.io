@@ -70,6 +70,16 @@ h2{font-size:30px;margin:0 0 10px}
 .sub{color:var(--muted);margin:0 0 36px;max-width:760px}
 h3.group{font-size:18px;margin:34px 0 16px;color:var(--muted);font-weight:600;letter-spacing:.3px}
 
+#accelerators{scroll-margin-top:130px}
+.accelerator-intro{margin-bottom:16px}
+.accelerator-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.accelerator-table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px;text-align:left}
+.accelerator-table th,.accelerator-table td{padding:12px 16px;vertical-align:top}
+.accelerator-table thead{background:var(--bg-alt)}
+.accelerator-table tbody tr{border-top:1px solid var(--line)}
+.accelerator-table tbody th a{white-space:nowrap}
+.accelerator-links{display:flex;flex-wrap:wrap;gap:4px 14px}
+
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;
   display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
@@ -147,7 +157,7 @@ html[lang="zh"] [data-zh]{display:revert}
       <div class="pills">
         <span class="pill"><span data-en>Error-bounded lossy</span><span data-zh>误差可控有损压缩</span></span>
         <span class="pill"><span data-en>Lossless</span><span data-zh>无损压缩</span></span>
-        <span class="pill">CPU · GPU · <span data-en>Accelerators</span><span data-zh>加速器</span></span>
+        <a class="pill" href="#accelerators"><span data-en>Accelerator builds</span><span data-zh>加速器适配</span></a>
         <span class="pill">BSD-3-Clause / MIT</span>
       </div>
     </div>
@@ -172,8 +182,42 @@ html[lang="zh"] [data-zh]{display:revert}
   <section id="projects">
     <div class="wrap">
       <h2 data-en>Compressors</h2><h2 data-zh>压缩器</h2>
-      <p class="sub" data-en><strong>Compression on Hygon DCUs and AMD GPUs.</strong> See <a href="https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary">hipSZ's Hygon K100 example</a> and <a href="https://github.com/opensdc-org/MANS#amd-mi210-gpu">MANS's AMD MI210 benchmarks</a>.</p>
-      <p class="sub" data-zh><strong>国产海光 DCU 与 AMD GPU 上的压缩。</strong> 参见 <a href="https://github.com/opensdc-org/hipSZ#using-hipsz-prepared-executable-binary">hipSZ 的海光 K100 实测示例</a>和 <a href="https://github.com/opensdc-org/MANS#amd-mi210-gpu">MANS 的 AMD MI210 评测</a>。</p>
+      <div id="accelerators">
+        <h3 class="group" id="accelerator-title"><span data-en>Accelerator-optimized compression</span><span data-zh>异构加速器优化</span></h3>
+        <p class="sub accelerator-intro"><span data-en>These implementations target Hygon DCUs and AMD GPUs and lay the groundwork for a compression software stack optimized for Hygon DCUs.</span><span data-zh>这些实现覆盖海光 DCU 和 AMD GPU，为建设面向海光 DCU 优化的压缩软件栈打基础。</span></p>
+        <div class="accelerator-scroll" role="region" aria-labelledby="accelerator-title" tabindex="0">
+          <table class="accelerator-table" aria-labelledby="accelerator-title">
+            <thead>
+              <tr>
+                <th scope="col"><span data-en>Project</span><span data-zh>项目</span></th>
+                <th scope="col"><span data-en>Compression</span><span data-zh>压缩能力</span></th>
+                <th scope="col"><span data-en>Hardware and toolkit</span><span data-zh>硬件与工具链</span></th>
+                <th scope="col"><span data-en>Builds and benchmarks</span><span data-zh>构建与实测</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><a href="https://github.com/opensdc-org/hipSZ">hipSZ</a></th>
+                <td><span data-en>cuSZp-based error-bounded lossy compression for FP32 and FP64</span><span data-zh>基于 cuSZp 的 FP32、FP64 误差可控有损压缩</span></td>
+                <td><span data-en>Hygon DCU (DTK) and AMD GPU (ROCm)</span><span data-zh>海光 DCU（DTK）、AMD GPU（ROCm）</span></td>
+                <td><div class="accelerator-links"><a href="https://github.com/opensdc-org/hipSZ#hygon-bw150-example"><span data-en>BW150 measurements</span><span data-zh>BW150 实测</span></a></div></td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://github.com/opensdc-org/hipPFPL">hipPFPL</a></th>
+                <td><span data-en>HIP port of PFPL for error-bounded FP32 and FP64 compression</span><span data-zh>PFPL 的 HIP 移植，实现 FP32、FP64 误差可控有损压缩</span></td>
+                <td><span data-en>Hygon BW150 DCU (DTK, gfx936)</span><span data-zh>海光 BW150 DCU（DTK、gfx936）</span></td>
+                <td><div class="accelerator-links"><a href="https://github.com/opensdc-org/hipPFPL#build"><span data-en>DTK build</span><span data-zh>DTK 构建</span></a><a href="https://github.com/opensdc-org/hipPFPL#tests"><span data-en>Tests</span><span data-zh>测试</span></a></div></td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://github.com/opensdc-org/MANS">MANS</a></th>
+                <td><span data-en>Lossless compression for multi-byte integers</span><span data-zh>面向多字节整数的无损压缩</span></td>
+                <td><span data-en>Hygon DCU (standalone DTK build) and AMD GPU (ROCm, CPU + AMD build)</span><span data-zh>海光 DCU（独立 DTK 构建）、AMD GPU（ROCm，CPU + AMD 构建）</span></td>
+                <td><div class="accelerator-links"><a href="https://github.com/opensdc-org/MANS#dcu-dtkhip-build"><span data-en>DCU build</span><span data-zh>DCU 构建</span></a><a href="https://github.com/opensdc-org/MANS#amd-mi210-gpu"><span data-en>AMD MI210 benchmarks</span><span data-zh>AMD MI210 评测</span></a></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <h3 class="group" data-en>General-purpose compressors</h3><h3 class="group" data-zh>通用压缩器</h3>
       <div class="grid" id="general"></div>
@@ -303,12 +347,9 @@ const PROJECTS = [
     en:"GPU-based progressive lossy compression for on-demand, precision-aware data retrieval.",
     zh:"基于 GPU 的渐进式有损压缩框架，支持按精度需求按需检索数据。",
     pub:"PPoPP '26 · Best Paper Nominee", pubZh:"PPoPP '26 · 最佳论文提名", pubUrl:"https://doi.org/10.1145/3774934.3786438" },
-  { name:"hipSZ", group:"general", repo:"https://github.com/opensdc-org/hipSZ",
-    en:"HIP implementation of cuSZp for error-bounded lossy compression of scientific data on Hygon DCUs (DTK) and AMD GPUs (ROCm).",
-    zh:"基于 cuSZp 的 HIP 实现，支持在海光 DCU（DTK）和 AMD GPU（ROCm）上对科学数据进行误差可控有损压缩。" },
   { name:"MANS", group:"general", repo:"https://github.com/opensdc-org/MANS",
-    en:"Lossless ANS entropy coding for multi-byte integers on CPUs and NVIDIA GPUs, with an optimized AMD ROCm backend and a standalone Hygon DCU build.",
-    zh:"面向多字节整数的无损 ANS 熵编码，支持 CPU 和 NVIDIA GPU，并提供针对 AMD GPU 的 ROCm 优化及独立的海光 DCU 构建。",
+    en:"Lossless ANS entropy coding for multi-byte integers on CPUs and accelerators.",
+    zh:"面向多字节整数的无损 ANS 熵编码，支持 CPU 和加速器。",
     pub:"SC '25", pubUrl:"https://doi.org/10.1145/3712285.3759825" },
   { name:"ClustraComp", group:"general", repo:"https://github.com/opensdc-org/ClustraComp",
     en:"Storage framework for grouping similar file chunks before lossless compression with LZ4 or Zstandard.",
